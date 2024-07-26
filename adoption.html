@@ -92,7 +92,7 @@
             <nav class="hidden lg:flex justify-end items-center gap-6">
               <div class="dropdown dropdown-hover">
                 <div tabindex="0" role="button"
-                  class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
+                  class="m-1 uppercase text-[#799805] font-medium transition-all duration-300">
                   Services</div>
                 <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
                   <li class="px-0 font-medium uppercase border-r-4 border-[#E2992A] bg-[#E9EAEB] pointer-events-none">
@@ -135,11 +135,15 @@
 
   <!-- MAIN CONTENT -->
   <main class="w-screen">
-    <section class="bg-white w-[90vw] mx-auto m-[5vw] py-12 mx-auto">
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] my-[2vw] py-12 mx-auto">
       <h2 class="text-2xl lg:text-[40px] uppercase font-heading text-center text-[#698018]">Vous désirez adopter un
         animal ?
-        <span class="block mt-4">Il y a deux façons de faire.</span>
+        <span class="block my-4 mb-8">Il y a deux façons de faire.</span>
       </h2>
+
+      <div class="w-[50vw] mx-auto">
+        <img src="assets/images/adoption.jpg" alt="adoption" class="w-full h-full object-fit">
+      </div>
 
       <div class="grid grid-cols-12 mt-4 p-10 pb-0 gap-6">
         <div class="col-span-12 md:col-span-6">
@@ -206,10 +210,13 @@
       </div>
     </section>
 
+    <!-- ADOPTION -->
     <section class="bg-white w-[90vw] mx-auto m-[5vw] py-12 mx-auto px-10">
       <h3 class="text-4xl uppercase font-medium text-[#698018] text-center">
         PROCÉDURES ET FRAIS
       </h3>
+
+      <!-- SPECIES SELECTER -->
       <div class="text-center mt-3">
         <label for="selectedSpecie" class="sr-only">Filtrer par espèce</label>
         <select name="selectedSpecie" id="selectedSpecie" class="mb-[3vw] bg-[#F5F5F5] px-4 py-1 cursor-pointer">
@@ -220,61 +227,72 @@
         </select>
       </div>
 
-      <div id="adoptionCostContainer">
-        <h4 class="text-3xl uppercase font-medium mb-2 ml-1">Chiens</h4>
-        <div class="join join-vertical w-full rounded-none">
-          <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="dogs" checked="checked" />
-            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
-            <div class="collapse-content collapse-open">
-              <ol class="list-decimal list-inside">
-                <li>Évaluez les coûts reliés au fait d’avoir un chien : nourriture, visites chez le vétérinaire,
-                  produits de soins, etc.</li>
-                <li>Selon sa taille, un chien peut vivre de 12 à 15 ans environ et requiert beaucoup d’attention.
-                  Aurez-vous le temps – et l’énergie! – de vous en occuper tous les jours ?</li>
-                <li>Prévoyez une période d’adaptation pour votre nouveau compagnon. Celui-ci pourrait faire de petits
-                  dégâts dans la maison au début.</li>
-              </ol>
+      <!-- ADOPTION COST -->
+      <div id="adoptionCostContainer" class="grid grid-cols-12 gap-6">
+        <!-- Initial data, will be replaced with js depending on the selected specie -->
+        <h4 class="text-3xl uppercase font-medium mb-2 ml-1 col-span-12">Chiens</h4>
+        <!-- ADOPTION DATA -->
+        <div class="col-span-12 md:col-span-8">
+          <div class="join join-vertical w-full rounded-none">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="dogs" checked="checked" />
+              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+              <div class="collapse-content collapse-open">
+                <ol class="list-decimal list-inside">
+                  <li>Évaluez les coûts reliés au fait d’avoir un chien : nourriture, visites chez le vétérinaire,
+                    produits de soins, etc.</li>
+                  <li>Selon sa taille, un chien peut vivre de 12 à 15 ans environ et requiert beaucoup d’attention.
+                    Aurez-vous le temps – et l’énergie! – de vous en occuper tous les jours ?</li>
+                  <li>Prévoyez une période d’adaptation pour votre nouveau compagnon. Celui-ci pourrait faire de petits
+                    dégâts dans la maison au début.</li>
+                </ol>
+              </div>
             </div>
-          </div>
-          <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="dogs" />
-            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="dogs" />
+              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+              </div>
+              <div class="collapse-content">
+                <p>Pour rencontrer les chiens en attente d’adoption, présentez-vous durant nos <a
+                    href="nous-joindre.html"
+                    class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
+                    d'ouverture</a>.</p>
+              </div>
             </div>
-            <div class="collapse-content">
-              <p>Pour rencontrer les chiens en attente d’adoption, présentez-vous durant nos <a href="nous-joindre.html"
-                  class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
-                  d'ouverture</a>.</p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="dogs" />
-            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
-            </div>
-            <div class="collapse-content">
-              <p><span class="font-medium">Chiot</span> – de moins de huit mois : 550 $<br>
-                <span class="font-medium">Chien</span> – de huit mois et plus : 400 $<br>
-                <span class="font-medium">Adoption humanitaire</span> – de 0 $ à 150 $, selon les besoins médicaux de
-                l’animal
-              </p>
-              <p class="my-2">Pour les chiens qui vivent mieux en duo, le refuge assume les frais d’adoption du
-                deuxième animal.</p>
-              <p class="font-medium">Ces frais incluent :</p>
-              <ul class="list-disc list-inside">
-                <li>La stérilisation</li>
-                <li>Le premier vaccin de base et le vaccin contre la rage</li>
-                <li>Un traitement contre les parasites</li>
-              </ul>
-              <p class="mt-3 text-xl text-[#E2992A]">Un dépôt est exigé pour les deux options :</p>
-              <p>Un dépôt est exigé à l’adoption d’un chien (150 $). Ce montant est remboursable sur présentation
-                d’une preuve qu’un cours d’obéissance a été suivi avec un entraîneur certifié RQIEC, CTC, CPDT-KA, IAABC
-                ou
-                CSAT.</p>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="dogs" />
+              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+              </div>
+              <div class="collapse-content">
+                <p><span class="font-medium">Chiot</span> – de moins de huit mois : 550 $<br>
+                  <span class="font-medium">Chien</span> – de huit mois et plus : 400 $<br>
+                  <span class="font-medium">Adoption humanitaire</span> – de 0 $ à 150 $, selon les besoins médicaux de
+                  l’animal
+                </p>
+                <p class="my-2">Pour les chiens qui vivent mieux en duo, le refuge assume les frais d’adoption du
+                  deuxième animal.</p>
+                <p class="font-medium">Ces frais incluent :</p>
+                <ul class="list-disc list-inside">
+                  <li>La stérilisation</li>
+                  <li>Le premier vaccin de base et le vaccin contre la rage</li>
+                  <li>Un traitement contre les parasites</li>
+                </ul>
+                <p class="mt-3 text-xl text-[#E2992A]">Un dépôt est exigé pour les deux options :</p>
+                <p>Un dépôt est exigé à l’adoption d’un chien (150 $). Ce montant est remboursable sur présentation
+                  d’une preuve qu’un cours d’obéissance a été suivi avec un entraîneur certifié RQIEC, CTC, CPDT-KA,
+                  IAABC
+                  ou
+                  CSAT.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+        <!-- SPECIES IMAGE -->
+        <div class="col-span-12 md:col-span-4 overflow-hidden">
+          <img src="assets/images/animals/17.jpg" alt="" class="w-full max-h-full object-cover">
+        </div>
+      </div>
     </section>
   </main>
 
