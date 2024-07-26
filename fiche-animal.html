@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="./styles/css/style.css">
 
   <!-- Custom JS -->
-  <script type="module" src="./scripts/index.js" defer></script>
+  <script type="module" src="./scripts/fiche-animal.js" defer></script>
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
@@ -135,73 +135,16 @@
   </header>
 
 
-  <main class="w-screen">
-    <!-- HERO -->
-    <section id="hero"
-      class="relative min-h-[calc(100vh-112px)] w-[90vw] mx-auto grid grid-cols-12 overflow-hidden px-[5vw] mx-auto ">
-      <div class="absolute inset-0 bg-black/50 z-20"></div>
-      <video loop muted autoplay class="absolute inset-0 brightness-100 hidden md:block">
-        <source src="./assets/videos/hero.mp4" type="video/webm">
-      </video>
-      <div class="z-50 col-span-12 h-full">
-        <div class="text-gray-100 text-shadow flex flex-col justify-evenly items-center h-full">
-          <h2 class="text-2xl lg:text-[45px] uppercase font-heading">
-            UNE SECONDE CHANCE, UNE NOUVELLE VIE !
-          </h2>
-          <a href="#"
-            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg">
-            ADOPTEZ UN ANIMAL
-          </a>
-        </div>
+  <main class="flex-1 px-[5vw] mx-auto w-screen">
+    <section class="grid grid-cols-12 w-full p-12">
+      <div id="animalImageContainer" class="col-span-12 lg:col-span-6">
+
       </div>
-    </section>
-
-    <!-- Our Mission -->
-    <section
-      class="rounded-none bg-gradient-to-r from-[#E2992A] to-[#698018] text-white flex flex-col px-[5vw] mt-[5vw] py-10 mx-auto">
-      <div class="flex items-baseline gap-4 mb-4">
-        <h2 class="text-2xl lg:text-[45px] uppercase font-heading">Notre Mission</h2>
-        <img src="./assets/images/patte-white.svg" alt="logo" class="h-[80px] w-auto">
-      </div>
-
-      <p class="text-lg mb-2 leading-loose">Chez Pattes d'Espoir, nous nous engageons à fournir un refuge sûr et aimant
-        aux
-        animaux
-        abandonnés. Notre
-        mission est de leur offrir une seconde chance en les préparant pour une adoption dans des foyers responsables et
-        attentionnés. Chaque don que nous recevons nous aide à continuer ce travail essentiel, à fournir des soins
-        médicaux, de la nourriture et de l'amour à ces animaux dans le besoin.</p>
-
-      <p class="text-lg leading-loose">Faites un Don Aujourd'hui et Aidez-Nous à Sauver Plus de Vies !</p>
-
-      <div class="flex justify-end">
-        <a href="don.html"
-          class="rounded-none px-8 py-2 font-semibold tracking-wide w-fit hover:bg-transparent border border-white bg-white text-[#698018] hover:text-white transition-all duration-300 text-lg flex items-center gap-2">
-          <i class="fa-solid fa-dollar-sign mt-1"></i>
-          Faire un don</a>
-      </div>
-    </section>
-
-    <!-- Recent animals -->
-    <section id="recentAnimals" class="bg-white w-[90vw] mx-auto mt-[5vw] px-6 py-12 px-[5vw] mx-auto">
-      <h2 class="text-2xl lg:text-[45px] uppercase font-heading px-[3vw] text-center">
-        NOS DERNIERS ARRIVÉS
-      </h2>
-
-      <div class="text-center mt-2">
-        <label for="filterLatest" class="sr-only">Filtrer par espèce</label>
-        <select name="filterLatest" id="filterLatest" class="mb-[3vw] bg-[#F5F5F5] px-4 py-1  cursor-pointer">
-          <option selected value="">Toutes les espèces</option>
-          <option value="Chien">Chiens</option>
-          <option value="Chat">Chats</option>
-          <option value="Perroquet">Oiseaux</option>
-          <option value="Lapin">Petits animaux</option>
-        </select>
-      </div>
-
-      <div id="latestAnimalContainer" class="grid grid-cols-12 mx-auto gap-6">
+      <div id="animalInfoContainer" class="col-span-12 lg:col-span-6 p-8 bg-white shadow-xl">
         <!-- Generated with JS -->
       </div>
+
+
     </section>
   </main>
 
@@ -301,7 +244,7 @@
           abandonnés ?</p>
         <div>
           <a href="don.html"
-            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg flex items-center gap-2">
+            class="rounded-sm px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg flex items-center gap-2">
             <i class="fa-solid fa-dollar-sign mt-1"></i>
             Faire un don</a>
         </div>

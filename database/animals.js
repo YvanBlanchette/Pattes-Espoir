@@ -5,14 +5,14 @@ export const animals = [
     specie: "Chien",
     breed: "Labrador",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "123456789012345",
+    gender: "Femelle",
+    chipId: "123456789012345",
     description: "Bella est une chienne énergique et affectueuse qui adore jouer et courir. Elle a besoin de beaucoup d'exercice et d'attention.",
-    traits: "Pelage noir, yeux marron",
+    distinctiveTraits: "Pelage noir, yeux marron",
     weight: "30 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 2,
@@ -20,14 +20,14 @@ export const animals = [
     specie: "Chat",
     breed: "Siamois",
     age: "2 ans",
-    sex: "Mâle",
-    chip: "234567890123456",
+    gender: "Mâle",
+    chipId: "234567890123456",
     description: "Milo est un chat curieux et intelligent. Il aime explorer et a besoin de stimulation mentale.",
-    traits: "Pelage crème, yeux bleus",
+    distinctiveTraits: "Pelage crème, yeux bleus",
     weight: "5 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 3,
@@ -35,14 +35,14 @@ export const animals = [
     specie: "Perroquet",
     breed: "Ara bleu",
     age: "5 ans",
-    sex: "Femelle",
-    chip: null,
+    gender: "Femelle",
+    chipId: null,
     description: "Coco est un perroquet bavard et social. Elle aime interagir avec les gens et peut apprendre quelques mots.",
-    traits: "Plumage bleu et jaune, bec noir",
+    distinctiveTraits: "Plumage bleu et jaune, bec noir",
     weight: "1 kg",
     height: "90 cm",
     vaccines: [],
-    otherTreatments: []
+    treatments: []
   },
   {
     id: 4,
@@ -50,14 +50,14 @@ export const animals = [
     specie: "Chien",
     breed: "Beagle",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "345678901234567",
+    gender: "Mâle",
+    chipId: "345678901234567",
     description: "Charlie est un chien affectueux et joueur. Il adore les promenades et les câlins.",
-    traits: "Pelage tricolore, yeux marron",
+    distinctiveTraits: "Pelage tricolore, yeux marron",
     weight: "10 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 5,
@@ -65,14 +65,14 @@ export const animals = [
     specie: "Chat",
     breed: "Maine Coon",
     age: "1 an",
-    sex: "Femelle",
-    chip: "456789012345678",
+    gender: "Femelle",
+    chipId: "456789012345678",
     description: "Luna est une chatte douce et tranquille. Elle aime se percher en hauteur et observer son environnement.",
-    traits: "Pelage gris, yeux verts",
+    distinctiveTraits: "Pelage gris, yeux verts",
     weight: "6 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 6,
@@ -80,14 +80,14 @@ export const animals = [
     specie: "Chien",
     breed: "Berger Allemand",
     age: "6 ans",
-    sex: "Mâle",
-    chip: "567890123456789",
+    gender: "Mâle",
+    chipId: "567890123456789",
     description: "Max est un chien loyal et protecteur. Il a besoin d'un maître expérimenté et d'un espace sécurisé pour se dépenser.",
-    traits: "Pelage noir et feu, yeux marron",
+    distinctiveTraits: "Pelage noir et feu, yeux marron",
     weight: "35 kg",
     height: "65 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 7,
@@ -95,14 +95,14 @@ export const animals = [
     specie: "Lapin",
     breed: "Nain",
     age: "2 ans",
-    sex: "Femelle",
-    chip: null,
+    gender: "Femelle",
+    chipId: null,
     description: "Ruby est une lapine curieuse et joueuse. Elle aime grignoter et explorer son environnement.",
-    traits: "Pelage blanc, yeux rouges",
+    distinctiveTraits: "Pelage blanc, yeux rouges",
     weight: "1 kg",
     height: "25 cm",
     vaccines: ["Myxomatose", "VHD"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 8,
@@ -110,14 +110,14 @@ export const animals = [
     specie: "Chien",
     breed: "Bulldog Anglais",
     age: "5 ans",
-    sex: "Mâle",
-    chip: "678901234567890",
+    gender: "Mâle",
+    chipId: "678901234567890",
     description: "Rocky est un chien calme et affectueux. Il aime les courtes promenades et les longues siestes.",
-    traits: "Pelage fauve, yeux marron",
+    distinctiveTraits: "Pelage fauve, yeux marron",
     weight: "24 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 9,
@@ -125,14 +125,14 @@ export const animals = [
     specie: "Chat",
     breed: "Bengal",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "789012345678901",
+    gender: "Femelle",
+    chipId: "789012345678901",
     description: "Lily est une chatte active et joueuse. Elle aime grimper et jouer avec des jouets interactifs.",
-    traits: "Pelage tacheté, yeux verts",
+    distinctiveTraits: "Pelage tacheté, yeux verts",
     weight: "4 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 10,
@@ -140,14 +140,14 @@ export const animals = [
     specie: "Chien",
     breed: "Golden Retriever",
     age: "2 ans",
-    sex: "Mâle",
-    chip: "890123456789012",
+    gender: "Mâle",
+    chipId: "890123456789012",
     description: "Buddy est un chien sociable et joueur. Il adore les enfants et les autres animaux.",
-    traits: "Pelage doré, yeux marron",
+    distinctiveTraits: "Pelage doré, yeux marron",
     weight: "32 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 11,
@@ -155,14 +155,14 @@ export const animals = [
     specie: "Chien",
     breed: "Dachshund",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "901234567890123",
+    gender: "Mâle",
+    chipId: "901234567890123",
     description: "Oscar est un chien affectueux et curieux. Il adore fouiner et jouer.",
-    traits: "Pelage brun, yeux marron",
+    distinctiveTraits: "Pelage brun, yeux marron",
     weight: "8 kg",
     height: "25 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 12,
@@ -170,14 +170,14 @@ export const animals = [
     specie: "Chat",
     breed: "Persan",
     age: "5 ans",
-    sex: "Femelle",
-    chip: "012345678901234",
+    gender: "Femelle",
+    chipId: "012345678901234",
     description: "Nala est une chatte douce et tranquille. Elle aime les caresses et les endroits confortables.",
-    traits: "Pelage blanc, yeux bleus",
+    distinctiveTraits: "Pelage blanc, yeux bleus",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 13,
@@ -185,14 +185,14 @@ export const animals = [
     specie: "Chien",
     breed: "Cocker Spaniel",
     age: "3 ans",
-    sex: "Mâle",
-    chip: "123456789012346",
+    gender: "Mâle",
+    chipId: "123456789012346",
     description: "Oliver est un chien joueur et affectueux. Il aime les longues promenades et les jeux.",
-    traits: "Pelage doré, yeux marron",
+    distinctiveTraits: "Pelage doré, yeux marron",
     weight: "13 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 14,
@@ -200,14 +200,14 @@ export const animals = [
     specie: "Chat",
     breed: "Abyssin",
     age: "2 ans",
-    sex: "Femelle",
-    chip: "234567890123457",
+    gender: "Femelle",
+    chipId: "234567890123457",
     description: "Mimi est une chatte active et curieuse. Elle aime explorer et jouer avec des jouets interactifs.",
-    traits: "Pelage roux, yeux verts",
+    distinctiveTraits: "Pelage roux, yeux verts",
     weight: "3 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 15,
@@ -215,14 +215,14 @@ export const animals = [
     specie: "Chien",
     breed: "Border Collie",
     age: "4 ans",
-    sex: "Femelle",
-    chip: "345678901234568",
+    gender: "Femelle",
+    chipId: "345678901234568",
     description: "Pepper est une chienne intelligente et énergique. Elle a besoin de beaucoup d'exercice et de stimulation mentale.",
-    traits: "Pelage noir et blanc, yeux marron",
+    distinctiveTraits: "Pelage noir et blanc, yeux marron",
     weight: "18 kg",
     height: "55 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 16,
@@ -230,14 +230,14 @@ export const animals = [
     specie: "Chat",
     breed: "Sphynx",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "456789012345679",
+    gender: "Femelle",
+    chipId: "456789012345679",
     description: "Lola est une chatte affectueuse et sociable. Elle aime la chaleur et les câlins.",
-    traits: "Peau nue, yeux bleus",
+    distinctiveTraits: "Peau nue, yeux bleus",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 17,
@@ -245,14 +245,14 @@ export const animals = [
     specie: "Chien",
     breed: "Doberman",
     age: "5 ans",
-    sex: "Mâle",
-    chip: "567890123456791",
+    gender: "Mâle",
+    chipId: "567890123456791",
     description: "Duke est un chien loyal et protecteur. Il a besoin d'un maître expérimenté et d'un espace sécurisé.",
-    traits: "Pelage noir et feu, yeux marron",
+    distinctiveTraits: "Pelage noir et feu, yeux marron",
     weight: "40 kg",
     height: "70 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 18,
@@ -260,14 +260,14 @@ export const animals = [
     specie: "Chat",
     breed: "Ragdoll",
     age: "4 ans",
-    sex: "Femelle",
-    chip: "678901234567892",
+    gender: "Femelle",
+    chipId: "678901234567892",
     description: "Lily est une chatte douce et affectueuse. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage blanc et gris, yeux bleus",
+    distinctiveTraits: "Pelage blanc et gris, yeux bleus",
     weight: "5 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 19,
@@ -275,14 +275,14 @@ export const animals = [
     specie: "Chien",
     breed: "Jack Russell Terrier",
     age: "3 ans",
-    sex: "Mâle",
-    chip: "789012345678903",
+    gender: "Mâle",
+    chipId: "789012345678903",
     description: "Jack est un chien énergique et curieux. Il aime jouer et a besoin de beaucoup d'exercice.",
-    traits: "Pelage blanc et brun, yeux marron",
+    distinctiveTraits: "Pelage blanc et brun, yeux marron",
     weight: "7 kg",
     height: "30 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 20,
@@ -290,14 +290,14 @@ export const animals = [
     specie: "Chat",
     breed: "Norvégien",
     age: "5 ans",
-    sex: "Femelle",
-    chip: "890123456789014",
+    gender: "Femelle",
+    chipId: "890123456789014",
     description: "Zoe est une chatte douce et tranquille. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage gris, yeux verts",
+    distinctiveTraits: "Pelage gris, yeux verts",
     weight: "5 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 21,
@@ -305,14 +305,14 @@ export const animals = [
     specie: "Chien",
     breed: "Boxer",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "012345678901245",
+    gender: "Mâle",
+    chipId: "012345678901245",
     description: "Baxter est un chien joueur et affectueux. Il aime les longues promenades et les jeux.",
-    traits: "Pelage fauve, yeux marron",
+    distinctiveTraits: "Pelage fauve, yeux marron",
     weight: "30 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 22,
@@ -320,14 +320,14 @@ export const animals = [
     specie: "Chat",
     breed: "Burmese",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "123456789012347",
+    gender: "Femelle",
+    chipId: "123456789012347",
     description: "Mimi est une chatte active et curieuse. Elle aime explorer et jouer avec des jouets interactifs.",
-    traits: "Pelage brun, yeux jaunes",
+    distinctiveTraits: "Pelage brun, yeux jaunes",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 23,
@@ -335,14 +335,14 @@ export const animals = [
     specie: "Chien",
     breed: "Red Heeler",
     age: "5 ans",
-    sex: "Mâle",
-    chip: "234567890123458",
+    gender: "Mâle",
+    chipId: "234567890123458",
     description: "Rusty est un chien intelligent et énergique. Il a besoin de beaucoup d'exercice et de stimulation mentale.",
-    traits: "Pelage rouge, yeux marron",
+    distinctiveTraits: "Pelage rouge, yeux marron",
     weight: "20 kg",
     height: "50 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 24,
@@ -350,14 +350,14 @@ export const animals = [
     specie: "Chat",
     breed: "Sphynx",
     age: "4 ans",
-    sex: "Femelle",
-    chip: "345678901234569",
+    gender: "Femelle",
+    chipId: "345678901234569",
     description: "Chloe est une chatte affectueuse et sociable. Elle aime la chaleur et les câlins.",
-    traits: "Peau nue, yeux verts",
+    distinctiveTraits: "Peau nue, yeux verts",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 25,
@@ -365,14 +365,14 @@ export const animals = [
     specie: "Chien",
     breed: "Rottweiler",
     age: "6 ans",
-    sex: "Mâle",
-    chip: "456789012345680",
+    gender: "Mâle",
+    chipId: "456789012345680",
     description: "Diesel est un chien loyal et protecteur. Il a besoin d'un maître expérimenté et d'un espace sécurisé.",
-    traits: "Pelage noir et feu, yeux marron",
+    distinctiveTraits: "Pelage noir et feu, yeux marron",
     weight: "45 kg",
     height: "70 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 26,
@@ -380,14 +380,14 @@ export const animals = [
     specie: "Chat",
     breed: "Bengal",
     age: "2 ans",
-    sex: "Mâle",
-    chip: "567890123456802",
+    gender: "Mâle",
+    chipId: "567890123456802",
     description: "Simba est un chat actif et joueur. Il aime grimper et jouer avec des jouets interactifs.",
-    traits: "Pelage tacheté, yeux verts",
+    distinctiveTraits: "Pelage tacheté, yeux verts",
     weight: "5 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 27,
@@ -395,14 +395,14 @@ export const animals = [
     specie: "Chien",
     breed: "Chihuahua",
     age: "3 ans",
-    sex: "Mâle",
-    chip: "678901234567813",
+    gender: "Mâle",
+    chipId: "678901234567813",
     description: "Bruno est un chien énergique et curieux. Il aime jouer et a besoin de beaucoup d'exercice.",
-    traits: "Pelage brun, yeux marron",
+    distinctiveTraits: "Pelage brun, yeux marron",
     weight: "3 kg",
     height: "20 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 28,
@@ -410,14 +410,14 @@ export const animals = [
     specie: "Chat",
     breed: "Birman",
     age: "4 ans",
-    sex: "Femelle",
-    chip: "789012345678924",
+    gender: "Femelle",
+    chipId: "789012345678924",
     description: "Daisy est une chatte douce et tranquille. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage crème et brun, yeux bleus",
+    distinctiveTraits: "Pelage crème et brun, yeux bleus",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 29,
@@ -425,14 +425,14 @@ export const animals = [
     specie: "Chien",
     breed: "Pointer",
     age: "5 ans",
-    sex: "Mâle",
-    chip: "890123456789035",
+    gender: "Mâle",
+    chipId: "890123456789035",
     description: "Hunter est un chien actif et énergique. Il aime courir et a besoin de beaucoup d'exercice.",
-    traits: "Pelage blanc et brun, yeux marron",
+    distinctiveTraits: "Pelage blanc et brun, yeux marron",
     weight: "25 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 30,
@@ -440,14 +440,14 @@ export const animals = [
     specie: "Chat",
     breed: "Chartreux",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "012345678901256",
+    gender: "Femelle",
+    chipId: "012345678901256",
     description: "Lilly est une chatte douce et affectueuse. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage gris, yeux orange",
+    distinctiveTraits: "Pelage gris, yeux orange",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 31,
@@ -455,14 +455,14 @@ export const animals = [
     specie: "Chien",
     breed: "Labrador",
     age: "3 ans",
-    sex: "Mâle",
-    chip: "123456789012358",
+    gender: "Mâle",
+    chipId: "123456789012358",
     description: "Max est un chien sociable et joueur. Il adore les enfants et les autres animaux.",
-    traits: "Pelage noir, yeux marron",
+    distinctiveTraits: "Pelage noir, yeux marron",
     weight: "30 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 32,
@@ -470,14 +470,14 @@ export const animals = [
     specie: "Chat",
     breed: "Maine Coon",
     age: "2 ans",
-    sex: "Femelle",
-    chip: "234567890123469",
+    gender: "Femelle",
+    chipId: "234567890123469",
     description: "Lola est une chatte douce et tranquille. Elle aime se percher en hauteur et observer son environnement.",
-    traits: "Pelage brun, yeux verts",
+    distinctiveTraits: "Pelage brun, yeux verts",
     weight: "6 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 33,
@@ -485,14 +485,14 @@ export const animals = [
     specie: "Chien",
     breed: "Bulldog Français",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "345678901234570",
+    gender: "Mâle",
+    chipId: "345678901234570",
     description: "Rocky est un chien calme et affectueux. Il aime les courtes promenades et les longues siestes.",
-    traits: "Pelage bringé, yeux marron",
+    distinctiveTraits: "Pelage bringé, yeux marron",
     weight: "12 kg",
     height: "35 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 34,
@@ -500,14 +500,14 @@ export const animals = [
     specie: "Chat",
     breed: "Siamois",
     age: "2 ans",
-    sex: "Femelle",
-    chip: "456789012345681",
+    gender: "Femelle",
+    chipId: "456789012345681",
     description: "Bella est une chatte curieuse et intelligente. Elle aime explorer et a besoin de stimulation mentale.",
-    traits: "Pelage crème, yeux bleus",
+    distinctiveTraits: "Pelage crème, yeux bleus",
     weight: "5 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 35,
@@ -515,14 +515,14 @@ export const animals = [
     specie: "Chien",
     breed: "Beagle",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "567890123456892",
+    gender: "Mâle",
+    chipId: "567890123456892",
     description: "Charlie est un chien affectueux et joueur. Il adore les promenades et les câlins.",
-    traits: "Pelage tricolore, yeux marron",
+    distinctiveTraits: "Pelage tricolore, yeux marron",
     weight: "10 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 36,
@@ -530,14 +530,14 @@ export const animals = [
     specie: "Chat",
     breed: "Maine Coon",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "678901234567804",
+    gender: "Femelle",
+    chipId: "678901234567804",
     description: "Lucy est une chatte douce et tranquille. Elle aime se percher en hauteur et observer son environnement.",
-    traits: "Pelage brun et blanc, yeux verts",
+    distinctiveTraits: "Pelage brun et blanc, yeux verts",
     weight: "6 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 37,
@@ -545,14 +545,14 @@ export const animals = [
     specie: "Chien",
     breed: "Doberman",
     age: "5 ans",
-    sex: "Mâle",
-    chip: "789012345678915",
+    gender: "Mâle",
+    chipId: "789012345678915",
     description: "Duke est un chien loyal et protecteur. Il a besoin d'un maître expérimenté et d'un espace sécurisé.",
-    traits: "Pelage noir et feu, yeux marron",
+    distinctiveTraits: "Pelage noir et feu, yeux marron",
     weight: "40 kg",
     height: "70 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 38,
@@ -560,14 +560,14 @@ export const animals = [
     specie: "Chat",
     breed: "Ragdoll",
     age: "4 ans",
-    sex: "Femelle",
-    chip: "890123456789026",
+    gender: "Femelle",
+    chipId: "890123456789026",
     description: "Luna est une chatte douce et affectueuse. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage blanc et gris, yeux bleus",
+    distinctiveTraits: "Pelage blanc et gris, yeux bleus",
     weight: "5 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 39,
@@ -575,14 +575,14 @@ export const animals = [
     specie: "Chien",
     breed: "Golden Retriever",
     age: "2 ans",
-    sex: "Mâle",
-    chip: "012345678901367",
+    gender: "Mâle",
+    chipId: "012345678901367",
     description: "Buddy est un chien sociable et joueur. Il adore les enfants et les autres animaux.",
-    traits: "Pelage doré, yeux marron",
+    distinctiveTraits: "Pelage doré, yeux marron",
     weight: "32 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 40,
@@ -590,14 +590,14 @@ export const animals = [
     specie: "Chat",
     breed: "Siamois",
     age: "3 ans",
-    sex: "Mâle",
-    chip: "123456789012478",
+    gender: "Mâle",
+    chipId: "123456789012478",
     description: "Simba est un chat curieux et intelligent. Il aime explorer et a besoin de stimulation mentale.",
-    traits: "Pelage crème, yeux bleus",
+    distinctiveTraits: "Pelage crème, yeux bleus",
     weight: "5 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 41,
@@ -605,14 +605,14 @@ export const animals = [
     specie: "Chien",
     breed: "Boxer",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "234567890123579",
+    gender: "Mâle",
+    chipId: "234567890123579",
     description: "Rocky est un chien calme et affectueux. Il aime les courtes promenades et les longues siestes.",
-    traits: "Pelage fauve, yeux marron",
+    distinctiveTraits: "Pelage fauve, yeux marron",
     weight: "24 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 42,
@@ -620,14 +620,14 @@ export const animals = [
     specie: "Chat",
     breed: "Bengal",
     age: "3 ans",
-    sex: "Femelle",
-    chip: "345678901234690",
+    gender: "Femelle",
+    chipId: "345678901234690",
     description: "Lily est une chatte active et joueuse. Elle aime grimper et jouer avec des jouets interactifs.",
-    traits: "Pelage tacheté, yeux verts",
+    distinctiveTraits: "Pelage tacheté, yeux verts",
     weight: "4 kg",
     height: "35 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 43,
@@ -635,14 +635,14 @@ export const animals = [
     specie: "Chien",
     breed: "Beagle",
     age: "4 ans",
-    sex: "Mâle",
-    chip: "456789012345701",
+    gender: "Mâle",
+    chipId: "456789012345701",
     description: "Oscar est un chien affectueux et joueur. Il adore les promenades et les câlins.",
-    traits: "Pelage tricolore, yeux marron",
+    distinctiveTraits: "Pelage tricolore, yeux marron",
     weight: "10 kg",
     height: "40 cm",
     vaccines: ["Rage", "Parvovirose"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 44,
@@ -650,14 +650,14 @@ export const animals = [
     specie: "Chat",
     breed: "Persan",
     age: "5 ans",
-    sex: "Femelle",
-    chip: "567890123456812",
+    gender: "Femelle",
+    chipId: "567890123456812",
     description: "Mimi est une chatte douce et tranquille. Elle aime les caresses et les endroits confortables.",
-    traits: "Pelage blanc, yeux bleus",
+    distinctiveTraits: "Pelage blanc, yeux bleus",
     weight: "4 kg",
     height: "30 cm",
     vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   },
   {
     id: 45,
@@ -665,88 +665,13 @@ export const animals = [
     specie: "Chien",
     breed: "Labrador",
     age: "2 ans",
-    sex: "Mâle",
-    chip: "678901234567925",
+    gender: "Mâle",
+    chipId: "678901234567925",
     description: "Buddy est un chien sociable et joueur. Il adore les enfants et les autres animaux.",
-    traits: "Pelage doré, yeux marron",
+    distinctiveTraits: "Pelage doré, yeux marron",
     weight: "32 kg",
     height: "60 cm",
     vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
-  },
-  {
-    id: 46,
-    name: "Bella",
-    specie: "Chat",
-    breed: "Bengal",
-    age: "3 ans",
-    sex: "Femelle",
-    chip: "789012345678936",
-    description: "Bella est une chatte active et joueuse. Elle aime grimper et jouer avec des jouets interactifs.",
-    traits: "Pelage tacheté, yeux verts",
-    weight: "4 kg",
-    height: "35 cm",
-    vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
-  },
-  {
-    id: 47,
-    name: "Oscar",
-    specie: "Chien",
-    breed: "Labrador",
-    age: "4 ans",
-    sex: "Mâle",
-    chip: "890123456789047",
-    description: "Oscar est un chien affectueux et joueur. Il adore les promenades et les câlins.",
-    traits: "Pelage noir, yeux marron",
-    weight: "30 kg",
-    height: "60 cm",
-    vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
-  },
-  {
-    id: 48,
-    name: "Luna",
-    specie: "Chat",
-    breed: "Chartreux",
-    age: "3 ans",
-    sex: "Femelle",
-    chip: "012345678901478",
-    description: "Luna est une chatte douce et affectueuse. Elle aime les câlins et les endroits confortables.",
-    traits: "Pelage gris, yeux orange",
-    weight: "4 kg",
-    height: "30 cm",
-    vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
-  },
-  {
-    id: 49,
-    name: "Simba",
-    specie: "Chien",
-    breed: "Golden Retriever",
-    age: "2 ans",
-    sex: "Mâle",
-    chip: "123456789012589",
-    description: "Simba est un chien sociable et joueur. Il adore les enfants et les autres animaux.",
-    traits: "Pelage doré, yeux marron",
-    weight: "32 kg",
-    height: "60 cm",
-    vaccines: ["Rage", "Parvovirose", "Hépatite"],
-    otherTreatments: ["Vermifuge"]
-  },
-  {
-    id: 50,
-    name: "Lucy",
-    specie: "Chat",
-    breed: "Siamois",
-    age: "3 ans",
-    sex: "Femelle",
-    chip: "234567890123690",
-    description: "Lucy est une chatte curieuse et intelligente. Elle aime explorer et a besoin de stimulation mentale.",
-    traits: "Pelage crème, yeux bleus",
-    weight: "5 kg",
-    height: "30 cm",
-    vaccines: ["Rage", "Coryza"],
-    otherTreatments: ["Vermifuge"]
+    treatments: ["Vermifuge"]
   }
 ]

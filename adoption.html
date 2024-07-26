@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="./styles/css/style.css">
 
   <!-- Custom JS -->
-  <script type="module" src="./scripts/index.js" defer></script>
+  <script type="module" src="./scripts/adoption.js" defer></script>
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
@@ -95,19 +95,18 @@
                   class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
                   Services</div>
                 <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
-                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
-                    <a href="adoption.html"
-                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
+                  <li class="px-0 font-medium uppercase border-r-4 border-[#E2992A] bg-[#E9EAEB] pointer-events-none">
+                    <a href="#" class="py-3 rounded-none flex gap-3 items-center pl-8 transition-all duration-300"><i
                         class="fa-solid fa-house text-sm"></i>Adoption</a>
                   </li>
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
-                    <a href="animaux-disponibles.html"
+                    <a href="#"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
                         class="fa-solid fa-paw text-sm"></i>Animaux
                       disponibles</a>
                   </li>
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
-                    <a href="clinique.html"
+                    <a href="#"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300">
                       <i class="fa-solid fa-syringe text-sm"></i>Clinique de stérilisation</a>
                   </li>
@@ -127,7 +126,6 @@
             <button class="" title="Rechercher">
               <i class="fa-solid fa-magnifying-glass text-xl hover:text-[#799805] transition-all duration-300"></i>
             </button>
-
           </div>
         </div>
       </div>
@@ -135,73 +133,148 @@
   </header>
 
 
+  <!-- MAIN CONTENT -->
   <main class="w-screen">
-    <!-- HERO -->
-    <section id="hero"
-      class="relative min-h-[calc(100vh-112px)] w-[90vw] mx-auto grid grid-cols-12 overflow-hidden px-[5vw] mx-auto ">
-      <div class="absolute inset-0 bg-black/50 z-20"></div>
-      <video loop muted autoplay class="absolute inset-0 brightness-100 hidden md:block">
-        <source src="./assets/videos/hero.mp4" type="video/webm">
-      </video>
-      <div class="z-50 col-span-12 h-full">
-        <div class="text-gray-100 text-shadow flex flex-col justify-evenly items-center h-full">
-          <h2 class="text-2xl lg:text-[45px] uppercase font-heading">
-            UNE SECONDE CHANCE, UNE NOUVELLE VIE !
-          </h2>
-          <a href="#"
-            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg">
-            ADOPTEZ UN ANIMAL
-          </a>
+    <section class="bg-white w-[90vw] mx-auto m-[5vw] py-12 mx-auto">
+      <h2 class="text-2xl lg:text-[40px] uppercase font-heading text-center text-[#698018]">Vous désirez adopter un
+        animal ?
+        <span class="block mt-4">Il y a deux façons de faire.</span>
+      </h2>
+
+      <div class="grid grid-cols-12 mt-4 p-10 pb-0 gap-6">
+        <div class="col-span-12 md:col-span-6">
+          <h3 class="text-2xl uppercase font-medium mb-2">
+            Option 1 : Présentez-vous au refuge !
+          </h3>
+          <p>
+            La majorité des animaux en attente d&apos;adoption séjournent au Refuge. Présentez-vous durant les <a
+              href="nous-joindre.html"
+              class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
+              d'ouverture</a>
+            du service d&apos;adoption pour les rencontrer. Notez que les samedi et dimanche, le temps
+            d&apos;attente peut être plus longue en raison du fort achalandage. Privilégiez les jours de semaine si vous
+            le
+            pouvez!
+          </p>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <h3 class="text-2xl uppercase font-medium mb-2">
+            Option 2 : Faites une demande en ligne !
+          </h3>
+          <p>
+            Les fiches des animaux comportent un bouton qui mène à un formulaire de demande d'adoption à remplir. Si
+            votre profil correspond à celui recherché pour l&apos;animal désiré, un membre de notre équipe vous
+            contactera
+            dans les cinq jours pour procéder à une entrevue de présélection.
+          </p>
+        </div>
+        <div class="col-span-12 mt-6">
+          <p class="text-center">Peu importe l&apos;option choisie, nos conseillers et conseillères à l&apos;adoption se
+            feront
+            un plaisir de vous guider et de répondre à toutes vos questions. Ils vous informeront aussi sur
+            l&apos;engagement
+            et les responsabilités que comporte l&apos;adoption d&apos;un animal. Vous pourrez également vous procurer
+            des
+            accessoires de base pour votre nouveau compagnon dans notre boutique, située au refuge. Merci de choisir
+            l&apos;adoption!</p>
         </div>
       </div>
     </section>
 
-    <!-- Our Mission -->
-    <section
-      class="rounded-none bg-gradient-to-r from-[#E2992A] to-[#698018] text-white flex flex-col px-[5vw] mt-[5vw] py-10 mx-auto">
-      <div class="flex items-baseline gap-4 mb-4">
-        <h2 class="text-2xl lg:text-[45px] uppercase font-heading">Notre Mission</h2>
-        <img src="./assets/images/patte-white.svg" alt="logo" class="h-[80px] w-auto">
-      </div>
-
-      <p class="text-lg mb-2 leading-loose">Chez Pattes d'Espoir, nous nous engageons à fournir un refuge sûr et aimant
-        aux
-        animaux
-        abandonnés. Notre
-        mission est de leur offrir une seconde chance en les préparant pour une adoption dans des foyers responsables et
-        attentionnés. Chaque don que nous recevons nous aide à continuer ce travail essentiel, à fournir des soins
-        médicaux, de la nourriture et de l'amour à ces animaux dans le besoin.</p>
-
-      <p class="text-lg leading-loose">Faites un Don Aujourd'hui et Aidez-Nous à Sauver Plus de Vies !</p>
-
-      <div class="flex justify-end">
-        <a href="don.html"
-          class="rounded-none px-8 py-2 font-semibold tracking-wide w-fit hover:bg-transparent border border-white bg-white text-[#698018] hover:text-white transition-all duration-300 text-lg flex items-center gap-2">
-          <i class="fa-solid fa-dollar-sign mt-1"></i>
-          Faire un don</a>
+    <section class="bg-white w-[90vw] mx-auto m-[5vw] py-12 mx-auto px-10">
+      <h3 class="text-4xl uppercase font-medium mb-6 text-[#698018] text-center">
+        Consignes importantes
+      </h3>
+      <div class="join join-vertical w-full rounded-none">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="consignes" checked="checked" />
+          <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Prévoyez du temps</div>
+          <div class="collapse-content collapse-open">
+            <p>Comme un rendez-vous en vue d’une adoption peut durer plus de 90 minutes, nous vous invitons à vous
+              présenter au plus tard à 18 h 30 en semaine, ou 16 h 30 la fin de semaine.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="consignes" />
+          <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Si vous prévoyez adopter un chat ou
+            un petit animal
+          </div>
+          <div class="collapse-content">
+            <p>Veuillez apporter une cage de transport ou en prévoir l’achat à notre boutique.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Recent animals -->
-    <section id="recentAnimals" class="bg-white w-[90vw] mx-auto mt-[5vw] px-6 py-12 px-[5vw] mx-auto">
-      <h2 class="text-2xl lg:text-[45px] uppercase font-heading px-[3vw] text-center">
-        NOS DERNIERS ARRIVÉS
-      </h2>
-
-      <div class="text-center mt-2">
-        <label for="filterLatest" class="sr-only">Filtrer par espèce</label>
-        <select name="filterLatest" id="filterLatest" class="mb-[3vw] bg-[#F5F5F5] px-4 py-1  cursor-pointer">
-          <option selected value="">Toutes les espèces</option>
-          <option value="Chien">Chiens</option>
+    <section class="bg-white w-[90vw] mx-auto m-[5vw] py-12 mx-auto px-10">
+      <h3 class="text-4xl uppercase font-medium text-[#698018] text-center">
+        PROCÉDURES ET FRAIS
+      </h3>
+      <div class="text-center mt-3">
+        <label for="selectedSpecie" class="sr-only">Filtrer par espèce</label>
+        <select name="selectedSpecie" id="selectedSpecie" class="mb-[3vw] bg-[#F5F5F5] px-4 py-1 cursor-pointer">
+          <option selected value="Chien">Chiens</option>
           <option value="Chat">Chats</option>
           <option value="Perroquet">Oiseaux</option>
           <option value="Lapin">Petits animaux</option>
         </select>
       </div>
 
-      <div id="latestAnimalContainer" class="grid grid-cols-12 mx-auto gap-6">
-        <!-- Generated with JS -->
+      <div id="adoptionCostContainer">
+        <h4 class="text-3xl uppercase font-medium mb-2 ml-1">Chiens</h4>
+        <div class="join join-vertical w-full rounded-none">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="dogs" checked="checked" />
+            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+            <div class="collapse-content collapse-open">
+              <ol class="list-decimal list-inside">
+                <li>Évaluez les coûts reliés au fait d’avoir un chien : nourriture, visites chez le vétérinaire,
+                  produits de soins, etc.</li>
+                <li>Selon sa taille, un chien peut vivre de 12 à 15 ans environ et requiert beaucoup d’attention.
+                  Aurez-vous le temps – et l’énergie! – de vous en occuper tous les jours ?</li>
+                <li>Prévoyez une période d’adaptation pour votre nouveau compagnon. Celui-ci pourrait faire de petits
+                  dégâts dans la maison au début.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="dogs" />
+            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+            </div>
+            <div class="collapse-content">
+              <p>Pour rencontrer les chiens en attente d’adoption, présentez-vous durant nos <a href="nous-joindre.html"
+                  class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
+                  d'ouverture</a>.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="dogs" />
+            <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+            </div>
+            <div class="collapse-content">
+              <p><span class="font-medium">Chiot</span> – de moins de huit mois : 550 $<br>
+                <span class="font-medium">Chien</span> – de huit mois et plus : 400 $<br>
+                <span class="font-medium">Adoption humanitaire</span> – de 0 $ à 150 $, selon les besoins médicaux de
+                l’animal
+              </p>
+              <p class="my-2">Pour les chiens qui vivent mieux en duo, le refuge assume les frais d’adoption du
+                deuxième animal.</p>
+              <p class="font-medium">Ces frais incluent :</p>
+              <ul class="list-disc list-inside">
+                <li>La stérilisation</li>
+                <li>Le premier vaccin de base et le vaccin contre la rage</li>
+                <li>Un traitement contre les parasites</li>
+              </ul>
+              <p class="mt-3 text-xl text-[#E2992A]">Un dépôt est exigé pour les deux options :</p>
+              <p>Un dépôt est exigé à l’adoption d’un chien (150 $). Ce montant est remboursable sur présentation
+                d’une preuve qu’un cours d’obéissance a été suivi avec un entraîneur certifié RQIEC, CTC, CPDT-KA, IAABC
+                ou
+                CSAT.</p>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
   </main>
 
