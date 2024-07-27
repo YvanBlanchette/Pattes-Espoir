@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr-CA" data-theme="light">
+
+<head>
+  <title>Patte d'Espoir - Refuge de la 2eme chance</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patte d'Espoir - Refuge de la 2eme chance">
+  <meta name="author" content="Yvan jr Blanchette">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind configs -->
+  <script>
+    tailwind.config = {
+      darkMode: false,
+      plugins: [daisyui],
+      daisyui: {
+        themes: ["light"],
+      },
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/css/style.css">
+
+  <!-- Custom JS -->
+  <script src="./scripts/clinique.js" defer></script>
+</head>
+
+<body class="flex flex-col w-screen overflow-x-hidden">
+  <!-- HEADER -->
+  <header class="block bg-base-100 shadow-xl ">
+    <!-- Navbar -->
+    <div class="navbar w-[90%] max-w-[1400px] mx-auto py-4 items-end">
+      <div class="navbar-start">
+        <a href="index.html" class="">
+          <img src="./assets/images/patte-espoir_logo.svg" class="h-[80px] w-auto" alt="Logo">
+        </a>
+      </div>
+      <div class="navbar-end">
+        <div class="flex flex-col gap-2">
+          <!-- Top Navbar -->
+          <nav class="hidden lg:flex justify-end gap-6">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-6">
+            <!-- Bottom Navbar -->
+            <nav class="hidden lg:flex justify-end items-center gap-6">
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button"
+                  class="m-1 uppercase text-[#799805] font-medium transition-all duration-300">
+                  Services</div>
+                <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] shadow-md">
+                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <a href="adoption.html"
+                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
+                        class="fa-solid fa-house text-sm"></i>Adoption</a>
+                  </li>
+                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <a href="animaux-disponibles.html"
+                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
+                        class="fa-solid fa-paw text-sm"></i>Animaux
+                      disponibles</a>
+                  </li>
+                  <li class="px-0 font-medium uppercase border-r-4 border-[#E2992A] bg-[#E9EAEB] pointer-events-none">
+                    <a href="clinique.html"
+                      class="py-3 rounded-none flex gap-3 items-center pl-8 transition-all duration-300"><i
+                        class="fa-solid fa-house text-sm"></i>Clique de stérilisation</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="nouvelles.html"
+                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Nouvelles</a>
+              <a href="a-propos.html"
+                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
+                À Propos
+              </a>
+              <a href="nous-joindre.html"
+                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Nous
+                joindre</a>
+            </nav>
+            <!-- Search Button -->
+            <button class="" title="Rechercher">
+              <i class="fa-solid fa-magnifying-glass text-xl hover:text-[#799805] transition-all duration-300"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="w-screen">
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
+      <div
+        class="w-full min-h-[500px] bg-[url('./assets/images/clinique.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center">
+
+        <h2 class="text-2xl lg:text-[40px] text-white uppercase font-heading text-center text-shadow">Clinique de
+          Vaccination et
+          Stérilisation
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-12 p-10 pb-0 gap-6 mt-12">
+        <div class="col-span-12 md:col-span-7">
+          <h3 class="text-2xl lg:text-[40px] text-[#E2992A] uppercase font-heading text-start leading-none mb-4">La
+            stérilisation :
+            <br>un geste bienveillant
+          </h3>
+          <div class="w-[90%]">
+            <p class="mb-3">
+              La clinique vétérinaire de Pattes d'Espoir a pour mission d’aider à contrer le problème de surpopulation
+              animale qui sévit présentement au Québec en offrant des services de vaccination et stérilisation à tarifs
+              réduits aux gardiens et gardiennes d’animaux ayant des ressources financières limitées.
+            </p>
+            <p>La clinique a reçu toutes les autorisations nécessaires à son
+              fonctionnement de l’Ordre des médecins vétérinaires du Québec (OMVQ).</p>
+          </div>
+          <h4 class="text-2xl lg:text-[30px] text-[#E2992A] uppercase font-semibold text-start leading-none mt-8 mb-6">
+            Les
+            bienfaites de la Stérilisation
+          </h4>
+
+          <h5 class="text-2xl lg:text-[24px] font-semibold text-start leading-none mb-2">
+            Chez la femelle
+          </h5>
+
+          <p class="w-[90%] mb-4">Chez la chienne et la chatte, la stérilisation diminue les risques de tumeur des
+            glandes
+            mammaires, de
+            cancer des ovaires et de l’utérus. Elle élimine les infections de l’utérus (problèmes de pyométrite), qui
+            sont fréquentes chez les femelles non stérilisées. Elle permet aussi d’éviter les saignements chez la
+            chienne (tous les six mois), les miaulements excessifs de la chatte, ainsi que l’agitation et les
+            comportements parfois indésirables associés aux chaleurs.</p>
+
+          <h5 class="text-2xl lg:text-[24px] font-semibold text-start leading-none mb-2">
+            Chez le mâle
+          </h5>
+
+          <p class="w-[90%]">Chez le chien, la stérilisation élimine les risques de problèmes de la prostate et de
+            cancer des testicules et atténue le marquage de territoire. Chez le chat, elle diminue également le
+            marquage, et la forte odeur d’urine qui y est associée, tout en réduisant les risques de conflits entre
+            chats.</p>
+        </div>
+        <div class="col-span-12 md:col-span-5">
+          <img src="assets/images/clinique2.jpg" alt="Chien léchant une vétérinaire">
+        </div>
+        <div class="col-span-12 mt-6">
+          <p class="text-start">Vérifiez votre admissibilité auprès de la clinique de Pattes d'Espoir en remplissant le
+            formulaire ci-dessous. Si vous êtes admissible, nous vous donnerons alors
+            les tarifs, les plages horaires disponibles et toutes autres modalités applicables.</p>
+
+          <p class="mt-4 mb-2">Patients prioritaires pour les services de stérilisation :</p>
+          <ul class="list-disc list-inside">
+            <li>Femelles gestantes</li>
+            <li>Risque élevé de grossesse (cohabitation mixte, chats d’extérieur)</li>
+            <li>Animaux non stérilisés dont le comportement cause problème (chattes en chaleur, marquage, miaulements)
+            </li>
+            <li>Procédures d’urgence</li>
+          </ul>
+          <p class="mt-4">En raison de la pénurie de main-d’œuvre qui touche actuellement nos services, notre temps de
+            réponse peut aller jusqu’à trois (3) mois. Merci de votre compréhension et de votre patience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] py-12 my-[3vw] px-10 shadow-xl">
+      <h3 class="text-4xl uppercase font-medium mb-6 text-[#698018] text-center">
+        Formulaire de demande de Stérilisation
+      </h3>
+      <form action="">
+        <div class="grid grid-cols-12 gap-4">
+          <div class="col-span-12">
+            <label>Avez-vous déjà rempli le formulaire de qualification concernant une demande de
+              stérilisation à la Clinique Pattes d'Espoir ?</label>
+            <label for="newQuery-yes" class="block cursor-pointer mt-2 mb-0.5">
+              <input required type="radio" name="newQuery" id="newQuery-yes" value="Oui"
+                class="cursor-pointer tracking-wide">
+              Oui</label>
+            <label for="newQuery-no" class="block cursor-pointer">
+              <input required type="radio" name="newQuery" id="newQuery-no" value="Non"
+                class="cursor-pointer tracking-wide">
+              Non</label>
+            <p id="queryMessage" class="mt-4 hidden text-red-500">Veuillez ne pas remplir de nouvelle demande. Contactez
+              la Clinique
+              vétérinaire de
+              stérilisation Pattes
+              d'Espoir directement au <a href="tel:14505555555"
+                class="hover:text-[#E2992A] transition-all duration-300 text-sm">
+                (450) 555-5555</a>.</p>
+          </div>
+          <div id="queryForm" class="col-span-12 hidden border-t">
+            <h4 class="text-2xl uppercase font-medium text-center  my-4">Vos coordonnées</h4>
+            <div class="grid grid-cols-12 gap-6">
+              <!-- Last name  -->
+              <p class="col-span-12 -mb-4 font-medium">Nom complet<span class="text-red-500"> *</span></p>
+              <div class="col-span-12 md:col-span-6">
+                <input required type="text" name="lastName" id="lastName" class="w-full bg-[#F5F5F5] px-4 py-1">
+                <label for="lastName" class="text-sm text-[#E2992A]">Nom de famille</label>
+              </div>
+              <!-- First name -->
+              <div class="col-span-12 md:col-span-6">
+                <input required type="text" name="firstName" id="firstName" class="w-full bg-[#F5F5F5] px-4 py-1">
+                <label for="firstName" class="text-sm text-[#E2992A]">Prénom</label>
+              </div>
+              <!-- Address -->
+              <p class="col-span-12 -mb-4 font-medium">Adresse<span class="text-red-500"> *</span></p>
+              <div class="col-span-12">
+                <input required type="text" name="address" id="address" class="w-full bg-[#F5F5F5] px-4 py-1">
+                <label for="address" class="text-sm text-[#E2992A]">Addresse</label>
+              </div>
+              <!--  City -->
+              <div class="col-span-12 md:col-span-6">
+                <input required type="text" name="city" id="city" class="w-full bg-[#F5F5F5] px-4 py-1">
+                <label for="city" class="text-sm text-[#E2992A]">Ville</label>
+              </div>
+              <!-- Postal code -->
+              <div class="col-span-12 md:col-span-6">
+                <input required type="text" name="postalCode" id="postalCode" class="w-full bg-[#F5F5F5] px-4 py-1">
+                <label for="postalCode" class="text-sm text-[#E2992A]">Code Postal</label>
+              </div>
+              <!-- Phone -->
+              <p class="col-span-12 -mb-4 font-medium">Téléphone<span class="text-red-500"> *</span></p>
+              <div class="col-span-12">
+                <label for="phone" class="hidden">Numéro de téléphone</label>
+                <input required type="phone" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1">
+              </div>
+              <!-- Email -->
+              <p class="col-span-12 -mb-4 font-medium">Courriel<span class="text-red-500"> *</span></p>
+              <div class="col-span-12">
+                <label for="email" class="hidden">Adresse courriel</label>
+                <input required type="email" name="email" id="email" class="w-full bg-[#F5F5F5] px-4 py-1">
+              </div>
+              <!-- Mailing List -->
+              <div class="col-span-12">
+                <input type="checkbox" name="mailingList" id="mailingList" class="mr-2">
+                <label for="mailingList"> J'accepte de recevoir des communications de la Clinique vétérinaire Pattes
+                  d'Espoir</label>
+              </div>
+              <div class="col-span-12 text-end">
+                <input type="submit" value="Envoyer"
+                  class="bg-[#698018] hover:bg-[#E2992A] text-white px-4 py-1 transition-all duration-300 cursor-pointer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="rounded-none text-white flex flex-col-reverse lg:flex-row justify-between">
+    <div
+      class="flex flex-col bg-gradient-to-r from-[#E2992A] to-[#698018] justify-between items-center lg:pt-10 lg:w-[70vw] lg:h-[22vw]">
+      <div class="flex flex-col lg:flex-row justify-between items-center mx-auto mt-6">
+        <div class="flex flex-col items-center -translate-y-8">
+          <!-- Logo -->
+          <a href="index.html" class="">
+            <img src="./assets/images/patte-espoir_logo-white.svg" class="h-[110px] w-auto" alt="Logo">
+          </a>
+
+          <!-- Socials -->
+          <nav class="flex justify-end gap-6">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl hover:text-[#698018] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl hover:text-[#698018] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl hover:text-[#698018] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl hover:text-[#698018] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl hover:text-[#698018] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </nav>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-x-6 lg:justify-evenly w-full">
+          <!-- Contact -->
+          <div class="flex flex-col gap-1 items-start justify-start text-start">
+            <h3 class="text-lg font-semibold uppercase">Coordonnées</h3>
+            <a href="https://maps.app.goo.gl/6npJRBCGDfrRspfF7" target="_blank"
+              class="flex gap-2 hover:text-[#E2992A] transition-all duration-300 text-sm">
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <p>
+                7695, Route 335<br>
+                Saint-Calixte (Québec)<br>
+                J0K 1Z0
+              </p>
+            </a>
+            <a href="tel:14505555555" class="flex gap-2 hover:text-[#E2992A] transition-all duration-300 text-sm">
+              <i class="fa-solid fa-phone mt-1"></i>
+              (450) 555-5555</a>
+          </div>
+          <!-- Opening hours -->
+          <div class="flex flex-col gap-1 items-start justify-start">
+            <h3 class="text-lg font-semibold uppercase">Heures d'ouverture</h3>
+            <div>
+              <p class="text-start text-sm">
+                Lundi au Vendredi : 15 h à 20 h <br>
+                Samedi et Dimanche : 11 h à 18 h
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="flex flex-col items-center gap-2 py-4 w-full text-sm">
+        <p>
+          &copy; Copyright 2024 - <a href="https://www.yvanblanchette.com/" target="_blank"
+            class="font-medium hover:text-[#E2992A] transition-all">Yvan jr Blanchette</a> - Tous droits réservés
+        </p>
+        <p class="-mt-2">
+          Dans le cadre de l'<b>AEC en Développmeent Web Front-end</b> du
+          <b>Cégep de Trois-Rivières</b>
+        </p>
+      </div>
+    </div>
+
+    <!--  Donation -->
+    <div
+      class="hidden lg:block relative bg-[url('./assets/images/footer.jpg')] bg-right bg-bottom bg-cover lg:w-[30vw] lg:h-[22vw]">
+      <div
+        class="absolute inset-0 bg-[#698018] bg-opacity-70 flex flex-col justify-center items-start text-start gap-4 p-6 pt-10">
+        <h2 class="text-2xl lg:text-[40px] uppercase font-heading text-center">DONNEZ</h2>
+        <p class="w-[85%]">Vous ne pouvez pas adopter un animal mais voudriez soutenir notre mission de donner une
+          nouvelle
+          vie aux animaux
+          abandonnés ?</p>
+        <div>
+          <a href="don.html"
+            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg flex items-center gap-2">
+            <i class="fa-solid fa-dollar-sign mt-1"></i>
+            Faire un don</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

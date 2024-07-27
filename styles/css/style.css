@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap");
-
 *,
 *::before,
 *::after {
@@ -13,6 +12,7 @@ body {
   background-color: whitesmoke;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-image: url(../../assets/images/background.svg);
 }
 
 img {
@@ -21,6 +21,96 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin-inline: auto;
+  min-height: 800px;
+}
+
+.images-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  width: 50%;
+  height: auto;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.images-display__container {
+  overflow: hidden;
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  filter: brightness(0.25);
+  transition: all 0.3s ease;
+}
+.images-display__container:hover {
+  filter: brightness(0.5);
+}
+
+.images-display__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image--selected {
+  height: 60%;
+  filter: brightness(1);
+  pointer-events: none;
+}
+
+.swiper {
+  width: 500px;
+  height: 340px;
+  border-radius: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 500px;
+  height: 340px;
+  object-fit: cover;
+}
+
+/* Customizing the pagination bullets */
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
 .font-heading {
   font-family: "M PLUS Rounded 1c", sans-serif;
