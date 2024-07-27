@@ -91,6 +91,8 @@
           <div class="flex items-center gap-6">
             <!-- Bottom Navbar -->
             <nav class="hidden lg:flex justify-end items-center gap-6">
+              <a href="index.html"
+                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Accueil</a>
               <div class="dropdown dropdown-hover">
                 <div tabindex="0" role="button"
                   class="m-1 uppercase text-[#799805] font-medium transition-all duration-300">
@@ -114,8 +116,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="nouvelles.html"
-                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Nouvelles</a>
+
               <a href="a-propos.html"
                 class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
                 À Propos
@@ -196,7 +197,7 @@
             formulaire ci-dessous. Si vous êtes admissible, nous vous donnerons alors
             les tarifs, les plages horaires disponibles et toutes autres modalités applicables.</p>
 
-          <p class="mt-4 mb-2">Patients prioritaires pour les services de stérilisation :</p>
+          <p class="mt-4  mb-2">Patients prioritaires pour les services de stérilisation :</p>
           <ul class="list-disc list-inside">
             <li>Femelles gestantes</li>
             <li>Risque élevé de grossesse (cohabitation mixte, chats d’extérieur)</li>
@@ -204,7 +205,7 @@
             </li>
             <li>Procédures d’urgence</li>
           </ul>
-          <p class="mt-4">En raison de la pénurie de main-d’œuvre qui touche actuellement nos services, notre temps de
+          <p class="mt-4 ">En raison de la pénurie de main-d’œuvre qui touche actuellement nos services, notre temps de
             réponse peut aller jusqu’à trois (3) mois. Merci de votre compréhension et de votre patience.</p>
         </div>
       </div>
@@ -227,7 +228,8 @@
               <input required type="radio" name="newQuery" id="newQuery-no" value="Non"
                 class="cursor-pointer tracking-wide">
               Non</label>
-            <p id="queryMessage" class="mt-4 hidden text-red-500">Veuillez ne pas remplir de nouvelle demande. Contactez
+            <p id="queryMessage" class="mt-4  hidden text-red-500">Veuillez ne pas remplir de nouvelle demande.
+              Contactez
               la Clinique
               vétérinaire de
               stérilisation Pattes
@@ -237,9 +239,9 @@
           </div>
           <div id="queryForm" class="col-span-12 hidden border-t">
             <h4 class="text-2xl uppercase font-medium text-center  my-4">Vos coordonnées</h4>
-            <div class="grid grid-cols-12 gap-6">
+            <div class="grid grid-cols-12 gap-x-6">
               <!-- Last name  -->
-              <p class="col-span-12 -mb-4 font-medium">Nom complet<span class="text-red-500"> *</span></p>
+              <p class="col-span-12 mb-2 mt-4 font-medium">Nom complet<span class="text-red-500"> *</span></p>
               <div class="col-span-12 md:col-span-6">
                 <input required type="text" name="lastName" id="lastName" class="w-full bg-[#F5F5F5] px-4 py-1">
                 <label for="lastName" class="text-sm text-[#E2992A]">Nom de famille</label>
@@ -250,8 +252,8 @@
                 <label for="firstName" class="text-sm text-[#E2992A]">Prénom</label>
               </div>
               <!-- Address -->
-              <p class="col-span-12 -mb-4 font-medium">Adresse<span class="text-red-500"> *</span></p>
-              <div class="col-span-12">
+              <p class="col-span-12 mb-2 mt-4 font-medium">Adresse<span class="text-red-500"> *</span></p>
+              <div class="col-span-12 mb-4">
                 <input required type="text" name="address" id="address" class="w-full bg-[#F5F5F5] px-4 py-1">
                 <label for="address" class="text-sm text-[#E2992A]">Addresse</label>
               </div>
@@ -266,13 +268,13 @@
                 <label for="postalCode" class="text-sm text-[#E2992A]">Code Postal</label>
               </div>
               <!-- Phone -->
-              <p class="col-span-12 -mb-4 font-medium">Téléphone<span class="text-red-500"> *</span></p>
+              <p class="col-span-12 mb-2 mt-4 font-medium">Téléphone<span class="text-red-500"> *</span></p>
               <div class="col-span-12">
                 <label for="phone" class="hidden">Numéro de téléphone</label>
                 <input required type="phone" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1">
               </div>
               <!-- Email -->
-              <p class="col-span-12 -mb-4 font-medium">Courriel<span class="text-red-500"> *</span></p>
+              <p class="col-span-12 mb-2 mt-4 font-medium">Courriel<span class="text-red-500"> *</span></p>
               <div class="col-span-12">
                 <label for="email" class="hidden">Adresse courriel</label>
                 <input required type="email" name="email" id="email" class="w-full bg-[#F5F5F5] px-4 py-1">

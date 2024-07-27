@@ -44,10 +44,11 @@
   <link rel="stylesheet" href="./styles/css/style.css">
 
   <!-- Custom JS -->
-  <script type="module" src="./scripts/index.js" defer></script>
+  <script type="module" src="./scripts/adoption.js" defer></script>
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
+  <!-- HEADER -->
   <header class="block bg-base-100 shadow-xl ">
     <!-- Navbar -->
     <div class="navbar w-[90%] max-w-[1400px] mx-auto py-4 items-end">
@@ -90,15 +91,16 @@
           <div class="flex items-center gap-6">
             <!-- Bottom Navbar -->
             <nav class="hidden lg:flex justify-end items-center gap-6">
+              <a href="index.html"
+                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Accueil</a>
               <div class="dropdown dropdown-hover">
-                <div tabindex="0" role="button"
-                  class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
+                <div tabindex="0" role="button" class="m-1 uppercase font-medium transition-all duration-300">
                   Services</div>
                 <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
                     <a href="adoption.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
-                        class="fa-solid fa-house text-sm"></i>Adoption</a>
+                        class="fa-solid fa-paw text-sm"></i>Adoption</a>
                   </li>
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
                     <a href="animaux-disponibles.html"
@@ -113,10 +115,8 @@
                   </li>
                 </ul>
               </div>
-              <a href="nouvelles.html"
-                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Nouvelles</a>
               <a href="a-propos.html"
-                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
+                class="m-1 uppercase text-[#799805] pointer-events-none font-medium transition-all duration-300">
                 À Propos
               </a>
               <a href="nous-joindre.html"
@@ -127,7 +127,6 @@
             <button class="" title="Rechercher">
               <i class="fa-solid fa-magnifying-glass text-xl hover:text-[#799805] transition-all duration-300"></i>
             </button>
-
           </div>
         </div>
       </div>
@@ -135,72 +134,85 @@
   </header>
 
 
+  <!-- MAIN CONTENT -->
   <main class="w-screen">
-    <!-- HERO -->
-    <section id="hero"
-      class="relative min-h-[calc(100vh-112px)] w-[90vw] mx-auto grid grid-cols-12 overflow-hidden px-[5vw] mx-auto shadow-xl">
-      <div class="absolute inset-0 bg-black/50 z-20"></div>
-      <video loop muted autoplay class="absolute inset-0 brightness-100 hidden md:block">
-        <source src="./assets/videos/hero.mp4" type="video/webm">
-      </video>
-      <div class="z-50 col-span-12 h-full">
-        <div class="text-gray-100 text-shadow flex flex-col justify-evenly items-center h-full">
-          <h2 class="text-2xl lg:text-[45px] uppercase font-heading">
-            UNE SECONDE CHANCE, UNE NOUVELLE VIE !
-          </h2>
-          <a href="#"
-            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg">
-            ADOPTEZ UN ANIMAL
-          </a>
-        </div>
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
+      <div
+        class="w-full min-h-[500px] bg-[url('./assets/images/a-propos.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center">
+
+        <h2 class="text-2xl lg:text-[40px] text-white uppercase font-heading text-center text-shadow tracking-wide">
+          À PROPOS DE PATTES D'ESPOIR
+        </h2>
       </div>
-    </section>
+      <div class="px-[5vw] mt-12">
+        <h2 class="text-2xl lg:text-[40px] uppercase font-heading text-center mb-4">À Propos de Pattes d'Espoir
+        </h2>
+        <p>Bienvenue chez Pattes d'Espoir, un refuge dédié à offrir une nouvelle chance aux animaux abandonnés. Situé à
+          Saint-Calixte dans la magnifique région des Laurentides, notre mission est de sauver, soigner et trouver des
+          foyers aimants pour ces animaux en quête d'une seconde vie.</p>
 
-    <!-- Our Mission -->
-    <section
-      class="rounded-none bg-gradient-to-r from-[#E2992A] to-[#698018] text-white flex flex-col px-[5vw] my-[3vw] py-10 mx-auto">
-      <div class="flex items-baseline gap-4 mb-4">
-        <h2 class="text-2xl lg:text-[45px] uppercase font-heading">Notre Mission</h2>
-        <img src="./assets/images/patte-white.svg" alt="logo" class="h-[80px] w-auto">
-      </div>
+        <h3 class="mt-6 mb-2 text-xl font-medium uppercase text-[#E2992A]">Notre Mission</h3>
+        <p class=""><span class="italic">"Une seconde chance, une nouvelle vie !"</span> n'est pas seulement notre
+          slogan, c'est notre engagement.
+          Chaque jour, nous travaillons sans relâche pour offrir un refuge sécuritaire et affectueux à des animaux
+          abandonnés ou en détresse. Notre équipe dévouée se consacre à les préparer pour une adoption réussie en leur
+          fournissant des soins médicaux, une alimentation de qualité, et surtout, beaucoup d'amour et d'attention.</p>
 
-      <p class="text-lg mb-2 leading-loose">Chez Patte d'Espoir, nous nous engageons à fournir un refuge sûr et aimant
-        aux
-        animaux
-        abandonnés. Notre
-        mission est de leur offrir une seconde chance en les préparant pour une adoption dans des foyers responsables et
-        attentionnés. Chaque don que nous recevons nous aide à continuer ce travail essentiel, à fournir des soins
-        médicaux, de la nourriture et de l'amour à ces animaux dans le besoin.</p>
+        <h3 class="mt-6 mb-2 text-xl font-medium uppercase text-[#E2992A]">Nos Valeurs</h3>
+        <ul class="list-disc list-inside">
+          <li><span class="font-medium">Compassion :</span> Chaque animal mérite une vie remplie d'amour et de respect.
+          </li>
+          <li><span class="font-medium">Engagement :</span> Nous nous engageons à améliorer le bien-être des animaux et
+            à sensibiliser la
+            communauté à la cause animale.</li>
+          <li><span class="font-medium">Transparence :</span> Nos processus d'adoption sont clairs et justes, assurant
+            le meilleur pour nos
+            animaux et leurs futurs propriétaires.</li>
+        </ul>
 
-      <p class="text-lg leading-loose">Faites un Don Aujourd'hui et Aidez-Nous à Sauver Plus de Vies !</p>
+        <h3 class="mt-6 mb-2 text-xl font-semibold uppercase text-[#E2992A]">Nos Services</h3>
+        <ul class="list-disc list-inside">
+          <li><span class="font-medium">Adoption :</span> Nous proposons une variété d'animaux prêts à trouver leur
+            foyer pour toujours. Que
+            vous cherchiez un chien, un chat, un oiseau ou un petit animal, nous avons votre futur compagnon.</li>
+          <li><span class="font-medium">Clinique de stérilisation :</span> Pour contribuer à la réduction des animaux
+            sans abri, nous
+            offrons des services de stérilisation à coût réduit.</li>
+          <li><span class="font-medium">Éducation et Sensibilisation :</span> Nous organisons des ateliers et des
+            événements pour éduquer le
+            public sur les soins et la responsabilité envers les animaux.</li>
+        </ul>
 
-      <div class="flex justify-end">
-        <a href="don.html"
-          class="rounded-none px-8 py-2 font-semibold tracking-wide w-fit hover:bg-transparent border border-white bg-white text-[#698018] hover:text-white transition-all duration-300 text-lg flex items-center gap-2">
-          <i class="fa-solid fa-dollar-sign mt-1"></i>
-          Faire un don</a>
-      </div>
-    </section>
+        <h3 class="mt-6 mb-2 text-xl font-semibold uppercase text-[#E2992A]">Notre Équipe</h3>
+        <p>Notre équipe est composée de professionnels passionnés par le bien-être animal. Des vétérinaires aux
+          bénévoles, chacun joue un rôle crucial pour garantir que chaque animal reçoive les meilleurs soins possibles.
+        </p>
 
-    <!-- Recent animals -->
-    <section id="recentAnimals" class="bg-white w-[90vw] mx-auto my-[3vw] px-6 py-12 px-[5vw] mx-auto shadow-xl">
-      <h2 class="text-2xl lg:text-[45px] uppercase font-heading px-[3vw] text-center">
-        NOS DERNIERS ARRIVÉS
-      </h2>
+        <h3 class="mt-6 mb-2 text-xl font-semibold uppercase text-[#E2992A]">Comment nous aider</h3>
+        <p>Votre soutien est essentiel pour nous permettre de continuer notre mission. Vous pouvez contribuer de
+          plusieurs façons :</p>
+        <ul class="list-disc list-inside">
+          <li><a href="dons.html"
+              class="font-medium text-[#799805] hover:text-[#E2992A] transition-all duration-300">Dons :</a>
+            Chaque don
+            aide à couvrir les coûts des
+            soins médicaux,
+            de la
+            nourriture et des infrastructures.</li>
+          <li><a href="nous-joindre.html"
+              class="font-medium text-[#799805] hover:text-[#E2992A] transition-all duration-300">Bénévolat : </a>
+            Rejoignez notre équipe de bénévoles et faites une différence
+            directe dans la vie de nos animaux.</li>
+          <li><a href="adoption.html"
+              class="font-medium text-[#799805] hover:text-[#E2992A] transition-all duration-300">Adoption : </a> Offrez
+            un foyer aimant à l'un de nos
+            pensionnaires et changez
+            une vie pour toujours.</li>
+        </ul>
 
-      <div class="text-center mt-2">
-        <label for="filterLatest" class="sr-only">Filtrer par espèce</label>
-        <select name="filterLatest" id="filterLatest" class="mb-[3vw] bg-[#F5F5F5] px-4 py-1  cursor-pointer">
-          <option selected value="">Toutes les espèces</option>
-          <option value="Chien">Chiens</option>
-          <option value="Chat">Chats</option>
-          <option value="Perroquet">Oiseaux</option>
-          <option value="Lapin">Petits animaux</option>
-        </select>
-      </div>
-
-      <div id="latestAnimalContainer" class="grid grid-cols-12 mx-auto gap-6">
-        <!-- Generated with JS -->
+        <p class="mt-6">Merci de votre intérêt pour Pattes d'Espoir. Ensemble, nous pouvons donner à ces animaux la
+          seconde chance qu'ils méritent tant. Pour plus d'informations ou pour commencer votre processus d'adoption,
+          n'hésitez pas à nous contacter.</p>
       </div>
     </section>
   </main>
