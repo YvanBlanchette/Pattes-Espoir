@@ -7,9 +7,9 @@ const dogAdoptionCosts = `
           <div class="join join-vertical w-full rounded-none">
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="dogs" checked="checked" />
-              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
-              <div class="collapse-content collapse-open">
-                <ol class="list-decimal list-inside">
+              <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+              <div class="collapse-content collapse-open text-sm lg:text-base">
+                <ol class="list-decimal list-inside space-y-2">
                   <li>Évaluez les coûts reliés au fait d’avoir un chien : nourriture, visites chez le vétérinaire,
                     produits de soins, etc.</li>
                   <li>Selon sa taille, un chien peut vivre de 12 à 15 ans environ et requiert beaucoup d’attention.
@@ -21,9 +21,9 @@ const dogAdoptionCosts = `
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="dogs" />
-              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+              <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
               </div>
-              <div class="collapse-content">
+              <div class="collapse-content text-sm lg:text-base">
                 <p>Pour rencontrer les chiens en attente d’adoption, présentez-vous durant nos <a
                     href="nous-joindre.html"
                     class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
@@ -32,9 +32,9 @@ const dogAdoptionCosts = `
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="dogs" />
-              <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+              <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
               </div>
-              <div class="collapse-content">
+              <div class="collapse-content text-sm lg:text-base">
                 <p><span class="font-medium">Chiot</span> – de moins de huit mois : 550 $<br>
                   <span class="font-medium">Chien</span> – de huit mois et plus : 400 $<br>
                   <span class="font-medium">Adoption humanitaire</span> – de 0 $ à 150 $, selon les besoins médicaux de
@@ -58,7 +58,7 @@ const dogAdoptionCosts = `
             </div>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4 overflow-hidden">
+        <div class="col-span-12 md:col-span-4 overflow-hidden hidden md:block">
           <img src="assets/images/animals/17.jpg" alt="" class="w-full max-h-full object-cover">
         </div>
 `;
@@ -69,9 +69,9 @@ const catAdoptionCosts = `
     <div class="join join-vertical w-full rounded-none">
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="cats" checked="checked" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
-        <div class="collapse-content collapse-open">
-          <ol class="list-decimal list-inside">
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+        <div class="collapse-content collapse-open text-sm lg:text-base">
+          <ol class="list-decimal list-inside space-y-2">
             <li>Évaluez les coûts reliés au fait d&apos;avoir un chat : nourriture, visites chez le vétérinaire, produits de soins, etc.</li>
             <li>Un chat peut vivre une bonne quinzaine d&apos;années. Aurez-vous le temps d&apos;en prendre soin tous les jours pour le reste de sa vie ?</li>
             <li>Prévoyez une période d&apos;adaptation pour votre nouveau compagnon; celui-ci pourrait causer des petits dégâts dans la maison au début.</li>
@@ -80,9 +80,9 @@ const catAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="cats" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
           <p>Pour rencontrer les chats en attente d&apos;adoption, présentez-vous durant nos <a href="nous-joindre.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
@@ -90,9 +90,9 @@ const catAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="cats" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
           <p><span class="font-medium">Chaton</span> – de moins de cinq mois : 275 $<br>
             <span class="font-medium">Chat</span> – de cinq mois et plus : 200 $<br>
             <span class="font-medium">Adoption humanitaire</span> – de 0 $ à 150 $, selon les besoins médicaux de
@@ -110,7 +110,7 @@ const catAdoptionCosts = `
       </div>
     </div>
   </div>
-  <div class="col-span-12 md:col-span-4 overflow-hidden">
+  <div class="col-span-12 md:col-span-4 overflow-hidden hidden md:block">
     <img src="assets/images/animals/5.jpg" alt="" class="w-full max-h-full object-cover">
   </div>
 `;
@@ -121,9 +121,9 @@ const birdAdoptionCosts = `
     <div class="join join-vertical w-full rounded-none">
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="birds" checked="checked" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
-        <div class="collapse-content collapse-open">
-          <ol class="list-decimal list-inside">
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+        <div class="collapse-content collapse-open text-sm lg:text-base">
+          <ol class="list-decimal list-inside space-y-2">
             <li>Évaluez les coûts reliés au fait d’avoir un oiseau : nourriture, visites chez le vétérinaire, produits de soins, etc.</li>
             <li>Les oiseaux peuvent vivre plusieurs années. Aurez-vous le temps d’en prendre soin jour après jour ?</li>
             <li>Prévoyez une période d’adaptation pour votre nouveau compagnon.</li>
@@ -132,9 +132,9 @@ const birdAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="birds" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
           <p>Pour rencontrer les oiseaux en attente d&apos;adoption, présentez-vous durant nos <a href="nous-joindre.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
@@ -142,9 +142,9 @@ const birdAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="birds" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
           <ul class="">
         <li><span class="font-medium">Inséparables :</span> 50$</li>
         <li><span class="font-medium">Canari :</span> 45$</li>
@@ -162,7 +162,7 @@ const birdAdoptionCosts = `
       </div>
     </div>
   </div>
-  <div class="col-span-12 md:col-span-4 overflow-hidden">
+  <div class="col-span-12 md:col-span-4 overflow-hidden hidden md:block">
     <img src="assets/images/animals/3.jpg" alt="" class="w-full max-h-full object-cover">
   </div>
 `;
@@ -173,9 +173,9 @@ const smallAnimalsAdoptionCosts = `
     <div class="join join-vertical w-full rounded-none">
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="smallAnimals" checked="checked" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
-        <div class="collapse-content collapse-open">
-          <ol class="list-decimal list-inside">
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
+        <div class="collapse-content collapse-open text-sm lg:text-base">
+          <ol class="list-decimal list-inside space-y-2">
             <li>Évaluez les coûts reliés au fait d’avoir un lapin : nourriture, visites chez le vétérinaire, produits de soins, etc. Vous trouverez toute l’information nécessaire pour prendre bien soin de votre petit protégé sur le site La dure vie du lapin urbain.</li>
             <li>Un lapin peut vivre une bonne dizaine d’années. Aurez-vous le temps de vous en occuper tous les jours pour le reste de sa vie ?</li>
             <li>Prévoyez une période d’adaptation pour votre nouveau compagnon. Celui-ci pourrait faire de petits dégâts dans la maison au début.</li>
@@ -184,9 +184,9 @@ const smallAnimalsAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="smallAnimals" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
           <p>Pour rencontrer les petits animaux en attente d’adoption, présentez-vous durant nos <a href="nous-joindre.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
@@ -194,9 +194,9 @@ const smallAnimalsAdoptionCosts = `
       </div>
       <div class="collapse collapse-arrow join-item border-base-300 border">
         <input type="radio" name="smallAnimals" />
-        <div class="collapse-title text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
+        <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
         </div>
-        <div class="collapse-content">
+        <div class="collapse-content text-sm lg:text-base">
         <ul class="">
         <li><span class="font-medium">Furet :</span> 75$</li>
         <li><span class="font-medium">Chinchilla :</span> 60$</li>
@@ -215,7 +215,7 @@ const smallAnimalsAdoptionCosts = `
       </div>
     </div>
   </div>
-  <div class="col-span-12 md:col-span-4 overflow-hidden">
+  <div class="col-span-12 md:col-span-4 overflow-hidden hidden md:block">
     <img src="assets/images/animals/46.jpg" alt="" class="w-full max-h-full object-cover">
   </div>
 `;
