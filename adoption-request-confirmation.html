@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr-CA" data-theme="light">
+
+<head>
+  <title>Patte d'Espoir - Refuge de la 2eme chance</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pattes d'Espoir, un refuge dédié à offrir une nouvelle chance aux animaux abandonnés. Situé à
+  Saint-Calixte dans la magnifique région des Laurentides, notre mission est de sauver, soigner et trouver des
+  foyers aimants pour ces animaux en quête d'une seconde vie.">
+  <meta name="author" content="Yvan jr Blanchette">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./assets/images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind configs -->
+  <script>
+    tailwind.config = {
+      darkMode: false,
+      plugins: [daisyui],
+      daisyui: {
+        themes: ["light"],
+      },
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles/css/style.css">
+
+  <!-- Custom JS -->
+  <script type="module" src="./scripts/index.js" defer></script>
+</head>
+
+<body class="flex flex-col w-screen overflow-x-hidden">
+  <!--! HEADER !-->
+  <header class="block bg-base-100 shadow-xl ">
+    <!-- Navbar - logo -->
+    <div class="navbar w-[90%] max-w-[1400px] mx-auto py-4">
+      <!-- Navbar - logo -->
+      <div class="navbar-start">
+        <a href="index.html" class="">
+          <img src="./assets/images/patte-espoir_logo.svg" class="h-[80px] w-auto" alt="Logo">
+        </a>
+      </div>
+      <!-- Navbar - Mobile navigation toggle -->
+      <div class="navbar-end lg:hidden h-full flex items-center">
+        <button id="mobile-navigation-toggle">
+          <i class="fa-solid fa-bars text-3xl mt-5 mr-2 hover:text-[#E2992A] transition-all duration-300"></i>
+        </button>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex flex-col gap-2">
+          <!-- Top Navbar -->
+          <nav class="hidden lg:flex justify-end gap-6">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-6">
+            <!-- Bottom Navbar -->
+            <nav class="hidden lg:flex justify-end items-center gap-6">
+              <!-- Accueil -->
+              <a href="index.html"
+                class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">Accueil</a>
+              <!-- Services -->
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button"
+                  class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">
+                  Services</div>
+                <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
+                  <!-- Adoption -->
+                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <a href="adoption.html"
+                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
+                        class="fa-solid fa-house text-sm"></i>Adoption</a>
+                  </li>
+                  <!-- Animaux Disponibles -->
+                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <a href="animaux-disponibles.html"
+                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
+                        class="fa-solid fa-paw text-sm"></i>Animaux
+                      disponibles</a>
+                  </li>
+                  <!-- Clinique Vétérinaire -->
+                  <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <a href="clinique.html"
+                      class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300">
+                      <i class="fa-solid fa-syringe text-sm"></i>Clinique Vétérinaire</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- A Propos -->
+              <a href="a-propos.html"
+                class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">
+                À Propos
+              </a>
+              <!-- Nous Joindre -->
+              <a href="nous-joindre.html"
+                class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">Nous
+                joindre</a>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--! END HEADER !  -->
+
+
+
+
+
+  <!--! MAIN CONTENT !-->
+  <main class="w-screen bg-gray-100">
+
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
+      <div
+        class="w-full min-h-[500px] bg-[url('./assets/images/thank-you.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center">
+
+        <h2 class="text-2xl lg:text-[40px] text-white uppercase font-heading text-center text-shadow">Confirmation
+          d'envoi
+        </h2>
+      </div>
+
+      <div class="px-10">
+        <h2 class="text-xl lg:text-[40px] uppercase font-bold text-center mt-12 mb-8">Votre demande à été soumise !
+        </h2>
+        <p class="mb-3 text-center w-[80%] mx-auto">Un membre de notre équipe sera en contact avec vous sous peu
+          afin d'évaluer votre situation et de vous aider à trouver un animal qui sera adapté à vos besoins.</p>
+
+        <p class="text-center">Merci d'avoir choisi Pattes d'Espoir. Le refuge de la 2ème chance!</p>
+
+        <a href="index.html"
+          class="mt-6 block text-center text-white bg-[#E2992A] hover:bg-[#698018] uppercase font-medium px-4 py-2 transition-all duration-300 w-fit mx-auto">Retour
+          à
+          l'accueil</a>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- ! END MAIN CONTENT ! -->
+
+
+  <!--! FOOTER !-->
+  <footer class="rounded-none text-white flex flex-col-reverse lg:flex-row justify-between">
+    <div
+      class="flex flex-col bg-gradient-to-r from-[#E2992A] to-[#698018] justify-between items-center pb-6 lg:pt-10 lg:w-[70vw] lg:h-[22vw]">
+      <div class="flex flex-col lg:flex-row justify-between items-center mx-auto mt-6">
+        <div class="flex flex-col items-center -translate-y-8 mt-10 lg:mt-0">
+          <!-- Footer Logo -->
+          <a href="index.html" class="">
+            <img src="./assets/images/patte-espoir_logo-white.svg" class="h-[90px] lg:h-[110px] w-auto" alt="Logo">
+          </a>
+
+          <!-- Socials -->
+          <nav class="flex justify-end gap-6 mt-3">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl hover:text-[#698018] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl hover:text-[#698018] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl hover:text-[#698018] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl hover:text-[#698018] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl hover:text-[#698018] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </nav>
+        </div>
+
+        <div class="hidden lg:flex justify-center gap-x-6 lg:justify-evenly w-full">
+          <!-- Contact -->
+          <div class="flex flex-col gap-1 items-start justify-start text-start">
+            <h3 class="text-lg font-semibold uppercase">Coordonnées</h3>
+            <a href="https://maps.app.goo.gl/6npJRBCGDfrRspfF7" target="_blank"
+              class="flex gap-2 hover:text-[#E2992A] transition-all duration-300 text-sm">
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <p>
+                7695, Route 335<br>
+                Saint-Calixte (Québec)<br>
+                J0K 1Z0
+              </p>
+            </a>
+            <a href="tel:14505555555" class="flex gap-2 hover:text-[#E2992A] transition-all duration-300 text-sm">
+              <i class="fa-solid fa-phone mt-1"></i>
+              (450) 555-5555</a>
+          </div>
+          <!-- Opening hours -->
+          <div class="flex flex-col gap-1 items-start justify-start">
+            <h3 class="text-lg font-semibold uppercase">Heures d'ouverture</h3>
+            <div>
+              <p class="text-start text-sm">
+                Lundi au Vendredi : 15 h à 20 h <br>
+                Samedi et Dimanche : 11 h à 18 h
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="flex flex-col items-center gap-2 lg:py-4 w-full text-sm">
+        <p>
+          &copy; Copyright 2024 - <a href="https://www.yvanblanchette.com/" target="_blank"
+            class="font-medium hover:text-[#E2992A] transition-all">Yvan jr Blanchette</a> - Tous droits réservés
+        </p>
+        <p class="-mt-2 text-center">
+          Dans le cadre de l'<b>AEC en Développmeent Web Front-end</b><br class="lg:hidden"> du
+          <b>Cégep de Trois-Rivières</b>
+        </p>
+      </div>
+    </div>
+
+    <!--  Donation -->
+    <div
+      class="hidden lg:block relative bg-[url('./assets/images/footer.jpg')] bg-right bg-bottom bg-cover lg:w-[30vw] lg:h-[22vw]">
+      <div
+        class="absolute inset-0 bg-[#698018] bg-opacity-70 flex flex-col justify-center items-start text-start gap-4 p-6 pt-10">
+        <h2 class="text-2xl lg:text-[40px] uppercase font-heading text-center">DONNEZ</h2>
+        <p class="w-[85%]">Vous ne pouvez pas adopter un animal mais voudriez soutenir notre mission de donner une
+          nouvelle
+          vie aux animaux
+          abandonnés ?</p>
+        <div>
+          <a href="don.html"
+            class="rounded-none px-4 py-2 font-semibold tracking-wide w-fit mx-auto bg-transparent border border-white hover:bg-white hover:text-gray-800 transition-all duration-300 text-lg flex items-center gap-2">
+            <i class="fa-solid fa-dollar-sign mt-1"></i>
+            Faire un don</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--! END FOOTER !-->
+
+
+  <!--! MOBILE NAVIGATION !-->
+  <section id="mobile-navigation" class="hidden absolute inset-0 w-screen h-screen bg-white z-50 lg:hidden">
+    <div>
+      <div class="relative">
+        <!-- Mobile navigation logo -->
+        <img src="./assets/images/patte-espoir_logo.svg" alt="Logo de pattes d'espoir"
+          class="h-[90px] w-auto mx-auto mt-8">
+        <!-- Mobile navigation close button -->
+        <button id="mobile-navigation-close"><i
+            class="fa-solid fa-xmark text-3xl absolute -top-2 right-2 hover:text-[#E2992A] transition-all duration-300"></i></button>
+      </div>
+    </div>
+    <div class="w-full h-full mt-auto">
+      <!-- Mobile navigation links -->
+      <ul class="flex flex-col justify-between py-16 p-4 items-center w-full h-[80vh]">
+        <!-- Accueil -->
+        <li class="uppercase font-medium text-[#E2992A] text-lg tracking-wider pointer-events-none">
+          <a href="index.html">Accueil</a>
+        </li>
+        <!-- Adoption -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="adoption.html">Adoption</a>
+        </li>
+        <!-- Animaux disponibles -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="animaux-disponibles.html">Animaux disponibles</a>
+        </li>
+        <!-- Clinique vétérinaire -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="clinique.html">Clinique Vétérinaire</a>
+        </li>
+        <!-- A propos -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="a-propos.html">À Propos</a>
+        </li>
+        <!-- Nous joindre -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="nous-joindre.html">Nous Joindre</a>
+        </li>
+        <!-- Socials -->
+        <li>
+          <div class="flex gap-6">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--! END MOBILE NAVIGATION !-->
+
+</body>
+
+</html>

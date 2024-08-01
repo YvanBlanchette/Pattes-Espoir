@@ -5,18 +5,20 @@
   <title>Patte d'Espoir - Refuge de la 2eme chance</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Patte d'Espoir - Refuge de la 2eme chance">
+  <meta name="description" content="  Pattes d'Espoir, un refuge dédié à offrir une nouvelle chance aux animaux abandonnés. Situé à
+  Saint-Calixte dans la magnifique région des Laurentides, notre mission est de sauver, soigner et trouver des
+  foyers aimants pour ces animaux en quête d'une seconde vie.">
   <meta name="author" content="Yvan jr Blanchette">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/assets/images/site.webmanifest">
-  <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="/assets/images/browserconfig.xml">
+  <meta name="msapplication-config" content="./assets/images/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Font Awesome -->
@@ -43,24 +45,29 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/css/style.css">
 
-  <!-- Custom JS -->
-  <script type="module" src="./scripts/adoption.js" defer></script>
+  <!-- Mobile Navugation JS -->
+  <script type="module" src="./scripts/mobile-navigation.js" defer></script>
+
+
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
-  <!-- HEADER -->
+  <!--! HEADER !-->
   <header class="block bg-base-100 shadow-xl ">
-    <!-- Navbar -->
+    <!-- Navbar - logo -->
     <div class="navbar w-[90%] max-w-[1400px] mx-auto py-4">
       <div class="navbar-start">
+        <!-- Navbar - logo -->
         <a href="index.html" class="">
           <img src="./assets/images/patte-espoir_logo.svg" class="h-[80px] w-auto" alt="Logo">
         </a>
       </div>
+      <!-- Navbar - Mobile navigation toggle -->
       <div class="navbar-end lg:hidden h-full flex items-center">
-        <button id="navbar-toggle"><i
+        <button id="mobile-navigation-toggle"><i
             class="fa-solid fa-bars text-3xl mt-5 mr-2 hover:text-[#E2992A] transition-all duration-300"></i></button>
       </div>
+      <!-- Navbar - Desktop navigation -->
       <div class="navbar-end hidden lg:flex">
         <div class="flex flex-col gap-2">
           <!-- Top Navbar -->
@@ -95,49 +102,54 @@
           <div class="flex items-center gap-6">
             <!-- Bottom Navbar -->
             <nav class="hidden lg:flex justify-end items-center gap-6">
+              <!-- Accueil -->
               <a href="index.html"
-                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">Accueil</a>
+                class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">Accueil</a>
+              <!-- Services -->
               <div class="dropdown dropdown-hover">
                 <div tabindex="0" role="button" class="m-1 uppercase font-medium transition-all duration-300">
                   Services</div>
                 <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <!-- Adoption -->
                     <a href="adoption.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
                         class="fa-solid fa-paw text-sm"></i>Adoption</a>
                   </li>
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
+                    <!-- Animaux Disponibles -->
                     <a href="animaux-disponibles.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
                         class="fa-solid fa-paw text-sm"></i>Animaux
                       disponibles</a>
                   </li>
+                  <!-- Clinique Vétérinaire -->
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
                     <a href="clinique.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300">
-                      <i class="fa-solid fa-syringe text-sm"></i>Clinique de stérilisation</a>
+                      <i class="fa-solid fa-syringe text-sm"></i>Clinique Vétérinaire</a>
                   </li>
                 </ul>
               </div>
+              <!-- A Propos -->
               <a href="a-propos.html"
-                class="m-1 uppercase hover:text-[#799805] font-medium transition-all duration-300">
+                class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">
                 À Propos
               </a>
-              <a href="nous-joindre.html" class="m-1 uppercase text-[#799805] pointer-events-none font-medium">Nous
+              <!-- Nous Joindre -->
+              <a href="nous-joindre.html" class="m-1 uppercase text-[#E2992A] pointer-events-none font-medium">Nous
                 joindre</a>
             </nav>
-            <!-- Search Button -->
-            <button class="" title="Rechercher">
-              <i class="fa-solid fa-magnifying-glass text-xl hover:text-[#799805] transition-all duration-300"></i>
-            </button>
+
           </div>
         </div>
       </div>
     </div>
   </header>
+  <!--! END HEADER !  -->
 
 
-  <!-- MAIN CONTENT -->
+  <!--! MAIN CONTENT !-->
   <main class="w-screen">
     <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
       <div
@@ -152,9 +164,9 @@
           <h3
             class="text-3xl lg:text-[40px] text-[#E2992A] uppercase font-semibold text-center md:text-start leading-none mb-4">
             Nos
-            <br class="hidden md:block">Coordonnées
+            <br class="hidden md:block lg:hidden">Coordonnées
           </h3>
-          <div class="w-full flex flex-col md:flex-row justify-between">
+          <div class="w-full flex flex-col lg:flex-row gap-x-10">
             <div class=" text-center md:text-start">
               <h4 class="text-lg uppercase font-semibold">
                 Adresse postale
@@ -177,11 +189,11 @@
                 (450) 555-5555</a>
             </div>
             <div class="text-center md:text-start">
-              <h4 class="text-lg uppercase font-semibold">
+              <h4 class="text-lg uppercase font-semibold group">
                 Heures d'Ouvertures
               </h4>
-              <a href="https://maps.app.goo.gl/6npJRBCGDfrRspfF7" target="_blank" class="mb-4">
-                <p class="text-center md:text-start text-sm">
+              <a href="https://maps.app.goo.gl/6npJRBCGDfrRspfF7" target="_blank" class="mb-4 group">
+                <p class="text-center md:text-start text-sm group-hover:text-[#E2992A]">
                   Lundi au Vendredi : 15 h à 20 h <br>
                   Samedi et Dimanche : 11 h à 18 h
                 </p>
@@ -199,61 +211,68 @@
         <div class="col-span-12 md:col-span-7">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9328.222034147122!2d-73.88443376861959!3d45.96532713273827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf3534f16c0a4b%3A0x953aeb34f68b48fa!2s7695%20Rte%20335%2C%20Saint-Calixte%2C%20QC%20J0K%201Z0!5e0!3m2!1sen!2sca!4v1722088627784!5m2!1sen!2sca"
-            style="border:0;" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+            style="border:0;" referrerpolicy="no-referrer-when-downgrade"
+            class="w-full aspect-square lg:aspect-video"></iframe>
         </div>
-        <div class="col-span-12 mt-10">
-          <h3 class="text-2xl lg:text-[40px] text-[#E2992A] uppercase font-bold text-center mb-4">
+        <div class="col-span-12 mt-16">
+          <h3 class="text-2xl lg:text-[40px] text-[#799805] uppercase font-bold text-center mb-4">
             Écrivez-Nous</h3>
 
           <!-- Contact Form -->
-          <form action="">
+          <form id="contactForm" action="contact-form-confirmation.html" method="POST" novalidate>
             <div id="queryForm" class="col-span-12">
-              <h4 class="text-center  my-4">Pour toutes questions ou demandes
-                d’information, écrivez-nous via le formulaire ci-dessous et nous vous répondrons dans les plus brefs
-                délais.</h4>
+              <h4 class="text-center my-4 mb-8">Pour toutes questions ou demandes d’information, écrivez-nous via le
+                formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</h4>
               <div class="grid grid-cols-12 gap-x-6">
-
                 <!-- Last name  -->
                 <p class="col-span-12 mb-2 mt-4 font-medium">Nom complet<span class="text-red-500"> *</span></p>
                 <div class="col-span-12 md:col-span-6">
-                  <input required type="text" name="lastName" id="lastName" class="w-full bg-[#F5F5F5] px-4 py-1">
-                  <label for="lastName" class="text-sm text-[#E2992A]">Nom de famille</label>
+                  <label for="lastName" class="hidden">Nom de famille</label>
+                  <input required type="text" name="lastName" id="lastName" class="w-full bg-[#F5F5F5] px-4 py-1"
+                    placeholder="Nom de famille">
+                  <span class="error text-red-500 text-xs"></span>
                 </div>
 
                 <!-- First name -->
                 <div class="col-span-12 md:col-span-6">
-                  <input required type="text" name="firstName" id="firstName" class="w-full bg-[#F5F5F5] px-4 py-1">
-                  <label for="firstName" class="text-sm text-[#E2992A]">Prénom</label>
+                  <label for="firstName" class="hidden">Prénom</label>
+                  <input required type="text" name="firstName" id="firstName" class="w-full bg-[#F5F5F5] px-4 py-1"
+                    placeholder="Prénom">
+                  <span class="error text-red-500 text-xs"></span>
                 </div>
 
                 <!-- Phone -->
                 <p class="col-span-12 mb-2 mt-4 font-medium">Téléphone<span class="text-red-500"> *</span></p>
                 <div class="col-span-12">
                   <label for="phone" class="hidden">Numéro de téléphone</label>
-                  <input required type="phone" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1">
+                  <input required type="phone" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1"
+                    placeholder="ex: (123) 456-7890">
+                  <span class="error text-red-500 text-xs"></span>
                 </div>
 
                 <!-- Email -->
                 <p class="col-span-12 mb-2 mt-4 font-medium">Courriel<span class="text-red-500"> *</span></p>
                 <div class="col-span-12">
                   <label for="email" class="hidden">Adresse courriel</label>
-                  <input required type="email" name="email" id="email" class="w-full bg-[#F5F5F5] px-4 py-1">
+                  <input required type="email" name="email" id="email" class="w-full bg-[#F5F5F5] px-4 py-1"
+                    placeholder="ex: sender@example.com">
+                  <span class="error text-red-500 text-xs"></span>
                 </div>
 
                 <!-- Message -->
                 <p class="col-span-12 mb-2 mt-4 font-medium">Message<span class="text-red-500"> *</span></p>
                 <div class="col-span-12">
-                  <label for="phone" class="hidden">Message</label>
+                  <label for="message" class="hidden">Message</label>
                   <textarea required class="w-full bg-[#F5F5F5] px-4 py-1" name="message" id="message"
                     rows="10"></textarea>
+                  <span class="error text-red-500 text-xs"></span>
                 </div>
 
                 <!-- Mailing List -->
                 <div class="col-span-12 flex items-center mt-2 mb-6">
                   <input type="checkbox" name="mailingList" id="mailingList" class="mr-2">
                   <label for="mailingList" class="text-xs lg:text-base"> J'accepte de recevoir des communications de
-                    Pattes
-                    d'Espoir</label>
+                    Pattes d'Espoir</label>
                 </div>
 
                 <!-- Submit -->
@@ -268,14 +287,16 @@
       </div>
     </section>
   </main>
+  <!-- ! END MAIN CONTENT ! -->
 
-  <!-- FOOTER -->
+
+  <!--! FOOTER !-->
   <footer class="rounded-none text-white flex flex-col-reverse lg:flex-row justify-between">
     <div
       class="flex flex-col bg-gradient-to-r from-[#E2992A] to-[#698018] justify-between items-center pb-6 lg:pt-10 lg:w-[70vw] lg:h-[22vw]">
       <div class="flex flex-col lg:flex-row justify-between items-center mx-auto mt-6">
         <div class="flex flex-col items-center -translate-y-8 mt-10 lg:mt-0">
-          <!-- Logo -->
+          <!-- Footer Logo -->
           <a href="index.html" class="">
             <img src="./assets/images/patte-espoir_logo-white.svg" class="h-[90px] lg:h-[110px] w-auto" alt="Logo">
           </a>
@@ -372,8 +393,85 @@
       </div>
     </div>
   </footer>
+  <!--! END FOOTER !-->
 
 
+  <!--! MOBILE NAVIGATION !-->
+  <section id="mobile-navigation" class="hidden absolute inset-0 w-screen h-screen bg-white z-50 lg:hidden">
+    <div>
+      <div class="relative">
+        <!-- Mobile navigation logo -->
+        <img src="./assets/images/patte-espoir_logo.svg" alt="Logo de pattes d'espoir"
+          class="h-[90px] w-auto mx-auto mt-8">
+        <!-- Mobile navigation close button -->
+        <button id="mobile-navigation-close"><i
+            class="fa-solid fa-xmark text-3xl absolute -top-2 right-2 hover:text-[#E2992A] transition-all duration-300"></i></button>
+      </div>
+    </div>
+    <div class="w-full h-full mt-auto">
+      <!-- Mobile navigation links -->
+      <ul class="flex flex-col justify-between py-16 p-4 items-center w-full h-[80vh]">
+        <!-- Accueil -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="index.html">Accueil</a>
+        </li>
+        <!-- Adoption -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="adoption.html">Adoption</a>
+        </li>
+        <!-- Animaux disponibles -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="animaux-disponibles.html">Animaux disponibles</a>
+        </li>
+        <!-- Clinique vétérinaire -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg tracking-wider">
+          <a href="clinique.html">Clinique Vétérinaire</a>
+        </li>
+        <!-- A propos -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+          <a href="a-propos.html">À Propos</a>
+        </li>
+        <!-- Nous joindre -->
+        <li class="uppercase font-medium text-[#E2992A] pointer-events-none text-lg  tracking-wider">
+          <a href="nous-joindre.html">Nous Joindre</a>
+        </li>
+        <!-- Mobile Navigation Socials -->
+        <li>
+          <div class="flex gap-6">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="facebook"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="twitter"></i>
+            </a>
+            <!-- Tiktok -->
+            <a href="https://www.tiktok.com" target="_blank">
+              <i class="fa-brands fa-tiktok text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="tiktok"></i>
+            </a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="fa-brands fa-youtube text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="youtube"></i>
+            </a>
+            <!-- Instagram  -->
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl text-[#698018] hover:text-[#E2992A] transition-all duration-300"
+                title="instagram"></i>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--! END MOBILE NAVIGATION !-->
+
+  <!-- Form Validation JS -->
+  <script type="module" src="./scripts/contact-form-validation.js" defer></script>
 </body>
 
 </html>

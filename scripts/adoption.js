@@ -1,3 +1,5 @@
+import "./mobile-navigation.js";
+
 const selectedSpecie = document.getElementById('selectedSpecie');
 const adoptionCostContainer = document.getElementById('adoptionCostContainer');
 

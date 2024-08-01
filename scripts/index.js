@@ -1,3 +1,5 @@
+import "./mobile-navigation.js";
+
 import { animals } from '../database/animals.js';
 
 const getLatestAnimals = (animals, filter) => {
@@ -26,7 +28,7 @@ const displayLatestAnimals = (animals) => {
 
     // Create the gender icon HTML
     const genderIcon = animal.gender === "Mâle"
-      ? '<i class="fa-solid fa-mars group-hover:text-[#799805]" title="Mâle"></i>'
+      ? '<i class="fa-solid fa-mars group-hover:text-[#E2992A]" title="Mâle"></i>'
       : '<i class="fa-solid fa-venus group-hover:text-[#E2992A]" title="Femelle"></i>';
 
     card.innerHTML = `
