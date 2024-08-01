@@ -23,7 +23,7 @@
 		}
 	],
 	"start_url": "https://yvanblanchette.github.io/Pattes-Espoir/",
-	"display": ["standalone", "fullscreen"],
+	"display": "standalone",
 	"orientation": "portrait",
 	"theme_color": "#ffffff",
 	"background_color": "#ffffff",
@@ -47,21 +47,39 @@
 			"short_name": "Adoption",
 			"description": "Procédure d'adoption",
 			"url": "/adoption",
-			"icons": [{ "src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" }]
+			"icons": [
+				{
+					"src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
 		},
 		{
 			"name": "À propos de Pattes d'Espoir",
 			"short_name": "À Propos",
 			"description": "En savoir plus à propos de Pattes d'Espoir, le refuge de la 2ème chance",
 			"url": "/about",
-			"icons": [{ "src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" }]
+			"icons": [
+				{
+					"src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
 		},
 		{
 			"name": "Joindre Pattes d'Espoir",
 			"short_name": "Nous Joindre",
 			"description": "Comment joindre le refuge de la 2ème chance",
 			"url": "/contact",
-			"icons": [{ "src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" }]
+			"icons": [
+				{
+					"src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/android-chrome-192x192.png",
+					"sizes": "192x192",
+					"type": "image/png"
+				}
+			]
 		}
 	]
 }
