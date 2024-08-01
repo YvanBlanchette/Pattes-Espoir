@@ -1,5 +1,3 @@
-import "./scripts/mobile-navigation.js";
-
 document.addEventListener("DOMContentLoaded", function () {
   const newQueryYes = document.getElementById('newQuery-yes');
   const newQueryNo = document.getElementById('newQuery-no');
