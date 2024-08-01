@@ -32,13 +32,15 @@
 			"src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/screenshot.jpg",
 			"sizes": "1920x1080",
 			"type": "image/jpeg",
-			"label": "Pattes d'Espoir"
+			"label": "Pattes d'Espoir",
+			"form_factor": "wide"
 		},
 		{
 			"src": "https://yvanblanchette.github.io/Pattes-Espoir/assets/images/screenshot_mobile.jpg",
 			"sizes": "334x750",
 			"type": "image/jpeg",
-			"label": "Pattes d'Espoir"
+			"label": "Pattes d'Espoir",
+			"form_factor": "narrow"
 		}
 	],
 	"shortcuts": [
