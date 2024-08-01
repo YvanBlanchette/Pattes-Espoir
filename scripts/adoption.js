@@ -27,7 +27,7 @@ const dogAdoptionCosts = `
               </div>
               <div class="collapse-content text-sm lg:text-base">
                 <p>Pour rencontrer les chiens en attente d’adoption, présentez-vous durant nos <a
-                    href="nous-joindre.html"
+                    href="contact.html"
                     class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
                     d'ouverture</a>.</p>
               </div>
@@ -85,7 +85,7 @@ const catAdoptionCosts = `
         <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
         <div class="collapse-content text-sm lg:text-base">
-          <p>Pour rencontrer les chats en attente d&apos;adoption, présentez-vous durant nos <a href="nous-joindre.html"
+          <p>Pour rencontrer les chats en attente d&apos;adoption, présentez-vous durant nos <a href="contact.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
         </div>
@@ -137,7 +137,7 @@ const birdAdoptionCosts = `
         <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
         <div class="collapse-content text-sm lg:text-base">
-          <p>Pour rencontrer les oiseaux en attente d&apos;adoption, présentez-vous durant nos <a href="nous-joindre.html"
+          <p>Pour rencontrer les oiseaux en attente d&apos;adoption, présentez-vous durant nos <a href="contact.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
         </div>
@@ -189,7 +189,7 @@ const smallAnimalsAdoptionCosts = `
         <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
         </div>
         <div class="collapse-content text-sm lg:text-base">
-          <p>Pour rencontrer les petits animaux en attente d’adoption, présentez-vous durant nos <a href="nous-joindre.html"
+          <p>Pour rencontrer les petits animaux en attente d’adoption, présentez-vous durant nos <a href="contact.html"
               class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
               d'ouverture</a>.</p>
         </div>

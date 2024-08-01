@@ -32,7 +32,7 @@ const displayLatestAnimals = (animals) => {
       : '<i class="fa-solid fa-venus group-hover:text-[#E2992A]" title="Femelle"></i>';
 
     card.innerHTML = `
-     <a href="fiche-animal.html?id=${animal.id}" class="cursor-pointer transition-all duration-300 group">
+     <a href="animal-file.html?id=${animal.id}" class="cursor-pointer transition-all duration-300 group">
       <div class="w-full h-auto overflow-hidden h-[172px]">
         <img src="assets/images/animals/${animal.id}.jpg" alt="${animal.name}" class="w-full h-[172px] object-cover group-hover:scale-110 transition-all duration-300">
       </div>

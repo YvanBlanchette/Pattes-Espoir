@@ -81,7 +81,7 @@ const displayAnimal = () => {
     <p class="text-sm  flex justify-between border-b border-gray-300 py-2 mb-6"><span class="font-medium">Autres traitements :</span><span id="animalTreatments">${selectedAnimal.treatments.join(', ')}</span></p>
 
     <div class="flex justify-end gap-6 w-full text-sm  md:text-base">
-      <a href="animaux-disponibles.html" class="text-white px-4 py-2 w-fit bg-[#698018] hover:bg-[#E2992A] transition-all duration-300 uppercase font-medium tracking-wide"><i class="fa-solid fa-chevron-left text-sm"></i> Retour</a>
+      <a href="available-animals.html" class="text-white px-4 py-2 w-fit bg-[#698018] hover:bg-[#E2992A] transition-all duration-300 uppercase font-medium tracking-wide"><i class="fa-solid fa-chevron-left text-sm"></i> Retour</a>
       <a href="adoption-request.html" class="text-white px-4 py-2 w-fit bg-[#E2992A] hover:bg-[#698018] transition-all duration-300 uppercase font-medium tracking-wide ">
         <i class="fa-solid fa-paw"></i> Demande d'adoption
       </a>
