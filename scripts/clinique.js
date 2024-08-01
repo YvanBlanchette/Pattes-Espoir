@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   newQueryYes.addEventListener('click', () => {
     queryMessage.classList.remove('hidden');
     queryForm.classList.add('hidden');
-  });
+  }); { }
 
   // Hide message and show form if new user
   newQueryNo.addEventListener('click', () => {
