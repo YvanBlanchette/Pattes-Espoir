@@ -3,6 +3,7 @@
 	"short_name": "Pattes d'Espoir",
 	"description": "Chez Pattes d'Espoir, nous nous engageons à fournir un refuge sûr et aimant aux animaux abandonnés. Notre mission est de leur offrir une seconde chance en les préparant pour une adoption dans des foyers responsables et attentionnés.",
 	"display": "standalone",
+	"display_override": ["standalone", "fullscreen"],
 	"orientation": "portrait",
 	"theme_color": "#E2992A",
 	"background_color": "#ffffff",
@@ -82,6 +83,12 @@
 					"type": "image/png"
 				}
 			]
+		}
+	],
+	"protocol_handlers": [
+		{
+			"protocol": "web+example",
+			"url": "https://yvanblanchette.github.io/Pattes-Espoir/?uri=%s"
 		}
 	]
 }

@@ -31,6 +31,7 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Tailwind configs -->
   <script>
     tailwind.config = {
@@ -44,9 +45,7 @@
   <link rel="stylesheet" href="./styles/css/style.css">
 
   <!-- Mobile Navugation JS -->
-  <script type="module" src="./scripts/mobile-navigation.js" defer></script>
-
-
+  <script src="./scripts/mobile-navigation.js" defer></script>
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
@@ -242,7 +241,7 @@
                 <p class="col-span-12 mb-2 mt-4 font-medium">Téléphone<span class="text-red-500"> *</span></p>
                 <div class="col-span-12">
                   <label for="phone" class="hidden">Numéro de téléphone</label>
-                  <input required type="phone" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1"
+                  <input required type="tel" name="phone" id="phone" class="w-full bg-[#F5F5F5] px-4 py-1"
                     placeholder="ex: (123) 456-7890">
                   <span class="error text-red-500 text-xs"></span>
                 </div>
@@ -395,6 +394,7 @@
 
   <!--! MOBILE NAVIGATION !-->
   <section id="mobile-navigation" class="hidden absolute inset-0 w-screen h-screen bg-white z-50 lg:hidden">
+    <h2 class="hidden">Pattes d'Espoir</h2>
     <div>
       <div class="relative">
         <!-- Mobile navigation logo -->
@@ -468,7 +468,7 @@
   <!--! END MOBILE NAVIGATION !-->
 
   <!-- Form Validation JS -->
-  <script type="module" src="./scripts/contact-form-validation.js" defer></script>
+  <script type="module" src="./scripts/contact-form-validation.js"></script>
 </body>
 
 </html>

@@ -43,9 +43,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/css/style.css">
 
-  <!-- Custom JS -->
-  <script type="module" src="./scripts/adoption.js" defer></script>
-
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
@@ -212,7 +209,7 @@
       </h3>
       <div class="join join-vertical w-full rounded-none">
         <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="consignes" checked="checked" />
+          <input type="radio" name="consignes" checked="checked">
           <div class="collapse-title text-lg uppercase text-[#E2992A] font-medium">Prévoyez du temps</div>
           <div class="collapse-content collapse-open text-sm lg:text-base">
             <p class="text-sm lg:text-base">Comme un rendez-vous en vue d’une adoption peut durer plus de 90 minutes,
@@ -221,7 +218,7 @@
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="consignes" />
+          <input type="radio" name="consignes">
           <div class="collapse-title text-lg uppercase text-[#E2992A] font-medium">Si vous prévoyez adopter un chat ou
             un petit animal
           </div>
@@ -258,7 +255,7 @@
         <div class="col-span-12 md:col-span-8">
           <div class="join join-vertical w-full rounded-none">
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="dogs" checked="checked" />
+              <input type="radio" name="dogs" checked="checked">
               <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Avant l'adoption</div>
               <div class="collapse-content collapse-open text-sm lg:text-base">
                 <ol class="list-decimal list-inside space-y-2">
@@ -272,7 +269,7 @@
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="dogs" />
+              <input type="radio" name="dogs">
               <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Pendant l'adoption
               </div>
               <div class="collapse-content text-sm">
@@ -282,7 +279,7 @@
               </div>
             </div>
             <div class="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="dogs" />
+              <input type="radio" name="dogs">
               <div class="collapse-title text-lg lg:text-xl uppercase text-[#E2992A] font-medium">Frais d'adoption
               </div>
               <div class="collapse-content text-sm lg:text-base">
@@ -426,6 +423,7 @@
 
   <!--! MOBILE NAVIGATION !-->
   <section id="mobile-navigation" class="hidden absolute inset-0 w-screen h-screen bg-white z-50 lg:hidden">
+    <h2 class="hidden">Pattes d'Espoir</h2>
     <div>
       <div class="relative">
         <img src="./assets/images/patte-espoir_logo.svg" alt="Logo de pattes d'espoir"
@@ -488,6 +486,8 @@
   </section>
   <!--! END MOBILE NAVIGATION !-->
 
+  <!-- Custom JS -->
+  <script type="module" src="./scripts/adoption.js"></script>
 </body>
 
 </html>
