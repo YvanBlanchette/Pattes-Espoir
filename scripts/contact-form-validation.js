@@ -66,8 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     return name.trim() !== "";
   }
 
+
   function validatePhone(phone) {
-    const phoneRegex = /^\d{10}$/;
+    const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
     return phoneRegex.test(phone);
   }
 

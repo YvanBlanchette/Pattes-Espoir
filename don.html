@@ -5,7 +5,7 @@
   <title>Pattes d'Espoir: Refuge de la 2eme chance</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="  Pattes d'Espoir, un refuge dédié à offrir une nouvelle chance aux animaux abandonnés. Situé à
+  <meta name="description" content="Pattes d'Espoir, un refuge dédié à offrir une nouvelle chance aux animaux abandonnés. Situé à
   Saint-Calixte dans la magnifique région des Laurentides, notre mission est de sauver, soigner et trouver des
   foyers aimants pour ces animaux en quête d'une seconde vie.">
   <meta name="author" content="Yvan jr Blanchette">
@@ -42,20 +42,27 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./styles/css/style.css">
+
+  <!-- Mobile Navigation JS -->
+  <script src="./scripts/mobile-navigation.js" defer></script>
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
+  <!--! HEADER !-->
   <header class="block bg-base-100 shadow-xl ">
     <!-- Navbar - logo -->
     <div class="navbar w-[90%] max-w-[1400px] mx-auto py-4">
+      <!-- Navbar - logo -->
       <div class="navbar-start">
         <a href="index.html" class="">
           <img src="./assets/images/patte-espoir_logo.svg" class="h-[80px] w-auto" alt="Logo">
         </a>
       </div>
+      <!-- Navbar - Mobile navigation toggle -->
       <div class="navbar-end lg:hidden h-full flex items-center">
-        <button id="mobile-navigation-toggle"><i
-            class="fa-solid fa-bars text-3xl mt-5 mr-2 hover:text-[#E2992A] transition-all duration-300"></i></button>
+        <button id="mobile-navigation-toggle">
+          <i class="fa-solid fa-bars text-3xl mt-5 mr-2 hover:text-[#E2992A] transition-all duration-300"></i>
+        </button>
       </div>
       <div class="navbar-end hidden lg:flex">
         <div class="flex flex-col gap-2">
@@ -100,6 +107,7 @@
                   class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">
                   Services</div>
                 <ul tabindex="0" class="dropdown-content menu bg-white z-[100] w-64 p-0 pt-[16px] ">
+                  <!-- Adoption -->
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
                     <a href="adoption.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300"><i
@@ -112,6 +120,7 @@
                         class="fa-solid fa-paw text-sm"></i>Animaux
                       disponibles</a>
                   </li>
+                  <!-- Clinique Vétérinaire -->
                   <li class="px-0 font-medium uppercase border-r-4 border-white hover:border-[#E2992A]">
                     <a href="clinique.html"
                       class="py-3 rounded-none flex gap-3 items-center hover:pl-6 transition-all duration-300">
@@ -119,16 +128,16 @@
                   </li>
                 </ul>
               </div>
-
+              <!-- A Propos -->
               <a href="about.html" class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">
                 À Propos
               </a>
+              <!-- Nous Joindre -->
               <a href="contact.html"
                 class="m-1 uppercase hover:text-[#E2992A] font-medium transition-all duration-300">Nous
                 joindre</a>
+
             </nav>
-
-
           </div>
         </div>
       </div>
@@ -138,19 +147,33 @@
 
 
   <!--! MAIN CONTENT !-->
+  <main class="w-screen bg-gray-100">
 
-  <main class="flex-1 lg:px-[5vw] mx-auto w-screen">
-    <section class="grid grid-cols-12 w-full p-12">
-      <h2 class="hidden">Fiche détaillée</h2>
-      <div id="animalImageContainer" class="col-span-12 lg:col-span-6">
+    <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
+      <div
+        class="w-full min-h-[500px] bg-[url('./assets/images/don.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center">
 
+        <h2 class="text-3xl lg:text-[50px] text-white uppercase font-heading text-center text-shadow tracking-wide">
+          Faire un don
+        </h2>
       </div>
-      <div id="animalInfoContainer" class="col-span-12 lg:col-span-6 p-8 bg-white shadow-xl">
-        <!-- Generated with JS -->
+      <div class="flex gap-10 items-center justify-center pt-12 pb-2">
+        <h3 class="text-lg lg:text-[38px] uppercase font-semibold text-center tracking-wide">Merci du fond du
+          coeur! <br> <span class="block text-base lg:text-[24px] pt-2 font-medium">Vos dons nous aide à
+            sauver plus de vies</span></h3>
+        <img src="./assets/images/android-chrome-192x192.png" class="w-[120px]" alt="Logo de pattes d'espoir">
       </div>
-
+      <div style="position:relative;overflow:hidden;height:1200px;width:100%;">
+        <iframe title="Faire un don"
+          style="position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%"
+          src="https://www.zeffy.com/embed/donation-form/cdf82291-3aa1-45f9-bf61-07ab522d2a49" allowpaymentrequest
+          allowtransparency="true"></iframe>
+      </div>
 
     </section>
+
+
+
   </main>
   <!-- ! END MAIN CONTENT ! -->
 
@@ -266,32 +289,42 @@
     <h2 class="hidden">Pattes d'Espoir</h2>
     <div>
       <div class="relative">
+        <!-- Mobile navigation logo -->
         <img src="./assets/images/patte-espoir_logo.svg" alt="Logo de pattes d'espoir"
           class="h-[90px] w-auto mx-auto mt-8">
+        <!-- Mobile navigation close button -->
         <button id="mobile-navigation-close"><i
             class="fa-solid fa-xmark text-3xl absolute -top-2 right-2 hover:text-[#E2992A] transition-all duration-300"></i></button>
       </div>
     </div>
     <div class="w-full h-full mt-auto">
+      <!-- Mobile navigation links -->
       <ul class="flex flex-col justify-between py-16 p-4 items-center w-full h-[80vh]">
-        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
+        <!-- Accueil -->
+        <li class="uppercase font-medium text-[#E2992A] text-lg tracking-wider pointer-events-none">
           <a href="index.html">Accueil</a>
         </li>
+        <!-- Adoption -->
         <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
           <a href="adoption.html">Adoption</a>
         </li>
+        <!-- Animaux disponibles -->
         <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
           <a href="available-animals.html">Animaux disponibles</a>
         </li>
-        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg tracking-wider">
+        <!-- Clinique vétérinaire -->
+        <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
           <a href="clinique.html">Clinique Vétérinaire</a>
         </li>
+        <!-- A propos -->
         <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
           <a href="about.html">À Propos</a>
         </li>
+        <!-- Nous joindre -->
         <li class="uppercase font-medium hover:text-[#E2992A] transition-all duration-300 text-lg  tracking-wider">
           <a href="contact.html">Nous Joindre</a>
         </li>
+        <!-- Socials -->
         <li>
           <div class="flex gap-6">
             <!-- Facebook -->
@@ -326,8 +359,6 @@
   </section>
   <!--! END MOBILE NAVIGATION !-->
 
-  <!-- Custom JS -->
-  <script type="module" src="./scripts/animal-file.js"></script>
 </body>
 
 </html>
