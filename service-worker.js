@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v2.0.1';
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -18,7 +18,9 @@ const FILES_TO_CACHE = [
     'scripts/clinique.js',
     'scripts/animal-file.js',
     'scripts/mobile-navigation.js',
-    'database/animals.js'
+    'database/animals.js',
+    'assets/videos/hero.mp4',
+    'assets/videos/hero_mobile.mp4',
 ];
 
 self.addEventListener('install', (evt) => {
