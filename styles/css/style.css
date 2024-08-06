@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap");
+
+
 *,
 *::before,
 *::after {
@@ -38,6 +40,6 @@ img {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.font-heading {
+. {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
