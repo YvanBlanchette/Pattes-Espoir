@@ -1,3 +1,4 @@
+//Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v2.0.1';
 
 // Add list of files to cache here.
@@ -53,6 +54,7 @@ self.addEventListener('activate', (evt) => {
 
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
+    //Add fetch event handler here
     if (evt.request.mode !== 'navigate') {
         return;
     }
