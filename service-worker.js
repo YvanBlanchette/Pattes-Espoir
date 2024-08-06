@@ -60,19 +60,19 @@ self.addEventListener('fetch', (evt) => {
     }
     evt.respondWith(
         fetch(evt.request)
+            .catch(() => {
+                // Network request failed, try to get it from the cache.
+                return caches.open(CACHE_NAME)
+                    .then((cache) => {
+                        return cache.match('./offline.html');
+                    });
+            })
             .then((response) => {
                 // If we received a valid response, return it.
                 if (response && response.status === 200 && response.type === 'basic') {
                     return response;
                 }
                 // Otherwise, fetch the fallback page.
-                return caches.open(CACHE_NAME)
-                    .then((cache) => {
-                        return cache.match('offline.html');
-                    });
-            })
-            .catch(() => {
-                // Network request failed, try to get it from the cache.
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
                         return cache.match('offline.html');
