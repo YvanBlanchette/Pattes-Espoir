@@ -46,6 +46,7 @@
 </head>
 
 <body class="flex flex-col w-screen overflow-x-hidden">
+  <a href="#main-content" class="sr-only">Contenu Principal</a>
   <!--! HEADER !-->
   <header class="block bg-base-100 shadow-xl ">
     <!-- Navbar - logo -->
@@ -138,9 +139,8 @@
 
 
   <!--! MAIN CONTENT !-->
-
-
-  <main class="w-screen">
+  <!-- Options d'adoption -->
+  <main id="main-content" class="w-screen">
     <section class="bg-white w-[90vw] mx-auto mx-[5vw] mb-[3vw] pb-12 mx-auto shadow-xl">
       <div
         class="w-full min-h-[500px] bg-[url('./assets/images/adoption.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center">
@@ -160,10 +160,13 @@
             Option 1 : Présentez-vous au refuge!
           </h3>
           <p>
-            La majorité des animaux en attente d&apos;adoption séjournent au Refuge. Présentez-vous durant les <a
-              href="contact.html"
-              class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
-              d'ouverture</a>
+            La majorité des animaux en attente d&apos;adoption séjournent au Refuge. Présentez-vous durant les
+            <span class="tooltip" data-tip="Lundi au Vendredi de 15h à 20h, 
+          Samedi et dimanche de 11h à 18h">
+              <a href="contact.html"
+                class="text-[#E2992A] hover:text-[#698018] font-medium transition-all duration-300">heures
+                d'ouverture</a>
+            </span>
             du service d&apos;adoption pour les rencontrer. Notez que les samedi et dimanche, le temps
             d&apos;attente peut être plus longue en raison du fort achalandage. Privilégiez les jours de semaine si
             vous
@@ -203,6 +206,7 @@
       </div>
     </section>
 
+    <!-- Consignes Importantes -->
     <section class="bg-white w-[90vw] mx-auto mx-[5vw] py-12 my-[3vw] px-10 shadow-xl">
       <h3 class="text-2xl lg:text-4xl uppercase font-medium mb-6 text-[#698018] text-center">
         Consignes importantes
@@ -230,7 +234,7 @@
       </div>
     </section>
 
-    <!-- ADOPTION -->
+    <!-- Adoption details -->
     <section class="bg-white w-[90vw] mx-auto mx-[5vw] py-12 my-[3vw] px-10 shadow-xl">
       <h3 class="text-3xl lg:text-4xl uppercase font-medium text-[#698018] text-center">
         PROCÉDURES ET FRAIS
