@@ -1,17 +1,18 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2.0.4';
+const CACHE_NAME = 'static-cache-v2.0.5';
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
-    'offline.html',
-    'index.html',
+    'about.html',
+    'adoption-request.html',
     'adoption.html',
+    'animal-file.html',
     'available-animals.html',
     'clinique.html',
-    'animal-file.html',
-    'adoption-request.html',
-    'about.html',
     'contact.html',
+    'don.html',
+    'index.html',
+    'offline.html',
     'styles/css/style.css',
     'scripts/index.js',
     'scripts/install.js',
@@ -23,6 +24,29 @@ const FILES_TO_CACHE = [
     'database/animals.js',
     'assets/videos/hero.mp4',
     'assets/videos/hero_mobile.mp4',
+    'assets/images/about.jpg',
+    'assets/images/adoption.jpg',
+    'assets/images/adoption2.jpg',
+    'assets/images/adoption-request.jpg',
+    'assets/images/clinique.jpg',
+    'assets/images/clinique2.jpg',
+    'assets/images/contact.jpg',
+    'assets/images/don.jpg',
+    'assets/images/footer.jpg',
+    'assets/images/our-animals.jpg',
+    'assets/images/thank-you.jpg',
+    'assets/images/android-chrome-144x144.png',
+    'assets/images/android-chrome-192x192.png',
+    'assets/images/android-chrome-512x512.png',
+    'assets/images/apple-touch-icon.png',
+    'assets/images/favicon.ico',
+    'assets/images/favicon-16x16.png',
+    'assets/images/favicon-32x32.png',
+    'assets/images/mstile-150x150.png',
+    'assets/images/patte.svg',
+    'assets/images/patte-espoir_logo.svg',
+    'assets/images/patte-espoir_logo-white.svg',
+    'assets/images/safari-pinned-tab.svg',
 ];
 
 self.addEventListener('install', (evt) => {
