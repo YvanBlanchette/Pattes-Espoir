@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2.0.2';
+const CACHE_NAME = 'static-cache-v2.0.3';
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -12,8 +12,9 @@ const FILES_TO_CACHE = [
     'adoption-request.html',
     'about.html',
     'contact.html',
-    'css/styles.css',
+    'styles/css/styles.css',
     'scripts/index.js',
+    'scripts/install.js',
     'scripts/adoption.js',
     'scripts/available-animals.js',
     'scripts/clinique.js',
